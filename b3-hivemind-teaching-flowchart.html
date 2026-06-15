@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B3 HiveMind Flowchart</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #151b23;
+      --panel-2: #1f2937;
+      --line: #506176;
+      --text: #eef4ff;
+      --muted: #a9b6c8;
+      --blue: #58a6ff;
+      --green: #7ee787;
+      --yellow: #f2cc60;
+      --red: #ff7b72;
+      --cyan: #76e3ea;
+      --violet: #d2a8ff;
+      --orange: #ffa657;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: end;
+      border-bottom: 1px solid #273445;
+      padding-bottom: 22px;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 34px;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .badge {
+      border: 1px solid #33465c;
+      background: #121923;
+      color: var(--green);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .section {
+      margin-top: 30px;
+      padding-top: 4px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 0 0 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin: 18px 0 8px;
+    }
+
+    .role {
+      min-height: 118px;
+      border: 1px solid #314154;
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .role strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 16px;
+    }
+
+    .role span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .legend i {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      margin-right: 6px;
+      vertical-align: -1px;
+    }
+
+    .diagram {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid #263445;
+      background: #0f1621;
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    svg {
+      display: block;
+      min-width: 1040px;
+      width: 100%;
+      height: auto;
+    }
+
+    .node {
+      fill: var(--panel);
+      stroke: #40536b;
+      stroke-width: 1.5;
+      rx: 8;
+    }
+
+    .node-blue { fill: #10243a; stroke: var(--blue); }
+    .node-green { fill: #123020; stroke: var(--green); }
+    .node-yellow { fill: #302613; stroke: var(--yellow); }
+    .node-red { fill: #341819; stroke: var(--red); }
+    .node-cyan { fill: #102d32; stroke: var(--cyan); }
+    .node-violet { fill: #251938; stroke: var(--violet); }
+    .node-orange { fill: #342313; stroke: var(--orange); }
+
+    .title {
+      fill: var(--text);
+      font-size: 16px;
+      font-weight: 700;
+      text-anchor: middle;
+    }
+
+    .small {
+      fill: var(--muted);
+      font-size: 12px;
+      text-anchor: middle;
+    }
+
+    .line {
+      stroke: var(--line);
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrow);
+    }
+
+    .line-green { stroke: var(--green); }
+    .line-yellow { stroke: var(--yellow); }
+    .line-blue { stroke: var(--blue); }
+
+    .label {
+      fill: var(--muted);
+      font-size: 12px;
+      text-anchor: middle;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .step {
+      background: var(--panel);
+      border: 1px solid #314154;
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 120px;
+    }
+
+    .num {
+      color: var(--yellow);
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .talk {
+      background: var(--panel);
+      border-left: 4px solid var(--green);
+      border-radius: 6px;
+      padding: 16px 18px;
+      color: #dce8f7;
+    }
+
+    code {
+      color: var(--cyan);
+      background: #101820;
+      border: 1px solid #243244;
+      border-radius: 4px;
+      padding: 2px 5px;
+    }
+
+    @media (max-width: 860px) {
+      header { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .page { padding: 20px 12px 34px; }
+      h1 { font-size: 26px; }
+      .grid, .steps { grid-template-columns: 1fr; }
+      .badge { width: fit-content; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <h1>B3 HiveMind Flowchart</h1>
+        <p class="subtitle">ภาพอธิบาย War Room, การประสานงาน AI, และการส่งงานผ่าน Trigger / INBOX</p>
+      </div>
+      <div class="badge">File-based multi-agent system</div>
+    </header>
+
+    <section class="section">
+      <h2>ภาพรวมระบบ</h2>
+      <div class="diagram" aria-label="B3 HiveMind overview diagram">
+        <svg viewBox="0 0 1040 640" role="img">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#506176"></path>
+            </marker>
+          </defs>
+
+          <rect class="node node-blue" x="435" y="22" width="170" height="70"></rect>
+          <text class="title" x="520" y="50">B3</text>
+          <text class="small" x="520" y="72">Human Director</text>
+
+          <rect class="node node-violet" x="330" y="130" width="380" height="92"></rect>
+          <text class="title" x="520" y="162">War Room</text>
+          <text class="small" x="520" y="184">board.json / locks.json / activity / decisions</text>
+          <text class="small" x="520" y="204">shared source of truth</text>
+
+          <rect class="node node-yellow" x="90" y="282" width="210" height="80"></rect>
+          <text class="title" x="195" y="312">Trigger Box</text>
+          <text class="small" x="195" y="334">triggers/from-to-task.json</text>
+
+          <rect class="node node-orange" x="415" y="282" width="210" height="80"></rect>
+          <text class="title" x="520" y="312">Watcher / OpenClaw</text>
+          <text class="small" x="520" y="334">zero-token while idle</text>
+
+          <rect class="node node-green" x="740" y="282" width="210" height="80"></rect>
+          <text class="title" x="845" y="312">Session Folder</text>
+          <text class="small" x="845" y="334">sessions/TASK_ID</text>
+
+          <rect class="node node-red" x="35" y="456" width="170" height="78"></rect>
+          <text class="title" x="120" y="486">Claude</text>
+          <text class="small" x="120" y="508">logic / review</text>
+
+          <rect class="node node-cyan" x="235" y="456" width="170" height="78"></rect>
+          <text class="title" x="320" y="486">Codex</text>
+          <text class="small" x="320" y="508">code / UI</text>
+
+          <rect class="node node-blue" x="435" y="456" width="170" height="78"></rect>
+          <text class="title" x="520" y="486">Gemini</text>
+          <text class="small" x="520" y="508">research / browse</text>
+
+          <rect class="node node-green" x="635" y="456" width="170" height="78"></rect>
+          <text class="title" x="720" y="486">Local AI</text>
+          <text class="small" x="720" y="508">utility / offline</text>
+
+          <rect class="node node-yellow" x="835" y="456" width="170" height="78"></rect>
+          <text class="title" x="920" y="486">Groq</text>
+          <text class="small" x="920" y="508">quick Q&amp;A</text>
+
+          <rect class="node node-green" x="370" y="570" width="300" height="54"></rect>
+          <text class="title" x="520" y="602">FINAL / DONE / next TRIGGER</text>
+
+          <path class="line line-blue" d="M520 92 L520 128"></path>
+          <path class="line" d="M430 222 C320 244 244 260 195 282"></path>
+          <path class="line line-yellow" d="M300 322 L414 322"></path>
+          <path class="line line-green" d="M626 322 L740 322"></path>
+
+          <path class="line" d="M520 362 L120 456"></path>
+          <path class="line" d="M520 362 L320 456"></path>
+          <path class="line" d="M520 362 L520 456"></path>
+          <path class="line" d="M520 362 L720 456"></path>
+          <path class="line" d="M520 362 L920 456"></path>
+
+          <path class="line line-green" d="M120 534 C200 566 325 585 370 596"></path>
+          <path class="line line-green" d="M320 534 C365 560 400 578 430 570"></path>
+          <path class="line line-green" d="M520 534 L520 570"></path>
+          <path class="line line-green" d="M720 534 C675 560 640 578 610 570"></path>
+          <path class="line line-green" d="M920 534 C840 566 715 585 670 596"></path>
+
+          <path class="line line-yellow" d="M370 596 C230 590 150 510 142 363"></path>
+          <text class="label" x="190" y="582">ถ้าต้องส่งต่อ สร้าง trigger ใหม่</text>
+
+          <text class="label" x="360" y="262">trigger-ai.js</text>
+          <text class="label" x="685" y="262">output / evidence</text>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><i style="background: var(--blue)"></i>คนสั่งงาน/AI หลัก</span>
+        <span><i style="background: var(--yellow)"></i>กล่องส่งงาน</span>
+        <span><i style="background: var(--orange)"></i>ตัวเฝ้า trigger</span>
+        <span><i style="background: var(--green)"></i>ผลลัพธ์/ปิดงาน</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>บทบาทของ AI ในทีม</h2>
+      <div class="grid">
+        <div class="role"><strong style="color: var(--red)">Claude</strong><span>Coordinator, backend, DB, API, review, synthesis</span></div>
+        <div class="role"><strong style="color: var(--cyan)">Codex</strong><span>Implementation, UI, components, code edits</span></div>
+        <div class="role"><strong style="color: var(--blue)">Gemini</strong><span>Research, browse, visual audit, long context</span></div>
+        <div class="role"><strong style="color: var(--green)">Local AI</strong><span>Small utilities, quick fixes, offline cheap tasks</span></div>
+        <div class="role"><strong style="color: var(--yellow)">Groq</strong><span>Simple Q&amp;A, short summaries, low-cost answers</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>ขั้นตอนการส่งงาน</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <strong>B3 สั่งงาน</strong>
+          <p>เริ่มจากโจทย์ของคน แล้วเลือกว่าจะทำเองในแชตหรือแตกเป็นงานย่อย</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <strong>สร้าง Trigger</strong>
+          <p><code>scripts/trigger-ai.js</code> เขียนไฟล์ JSON ลง <code>triggers/</code></p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <strong>Watcher ปลุก AI</strong>
+          <p>OpenClaw หรือ standby watcher เห็นไฟล์ใหม่ แล้วส่งให้ AI เป้าหมาย</p>
+        </div>
+        <div class="step">
+          <div class="num">04</div>
+          <strong>บันทึกผล</strong>
+          <p>ผลลัพธ์ลง <code>sessions/TASK_ID/</code> พร้อม review, handoff, final</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>ขั้นตอน Handoff เมื่อ AI ส่งงานต่อ</h2>
+      <div class="diagram" aria-label="B3 HiveMind handoff diagram">
+        <svg viewBox="0 0 1040 360" role="img">
+          <defs>
+            <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#506176"></path>
+            </marker>
+          </defs>
+
+          <rect class="node node-cyan" x="35" y="48" width="160" height="76"></rect>
+          <text class="title" x="115" y="78">AI Owner</text>
+          <text class="small" x="115" y="100">เช่น Codex</text>
+
+          <rect class="node node-yellow" x="235" y="48" width="170" height="76"></rect>
+          <text class="title" x="320" y="78">เขียนสถานะ</text>
+          <text class="small" x="320" y="100">handoff.md</text>
+
+          <rect class="node node-violet" x="445" y="48" width="170" height="76"></rect>
+          <text class="title" x="530" y="78">ปล่อย/โอนงาน</text>
+          <text class="small" x="530" y="100">release lock หรือ handoff cmd</text>
+
+          <rect class="node node-orange" x="655" y="48" width="170" height="76"></rect>
+          <text class="title" x="740" y="78">สร้าง Trigger</text>
+          <text class="small" x="740" y="100">[TRIGGER:claude]</text>
+
+          <rect class="node node-red" x="865" y="48" width="140" height="76"></rect>
+          <text class="title" x="935" y="78">AI ถัดไป</text>
+          <text class="small" x="935" y="100">อ่านแล้วรับต่อ</text>
+
+          <path class="line" style="marker-end:url(#arrow2)" d="M195 86 L235 86"></path>
+          <path class="line" style="marker-end:url(#arrow2)" d="M405 86 L445 86"></path>
+          <path class="line" style="marker-end:url(#arrow2)" d="M615 86 L655 86"></path>
+          <path class="line" style="marker-end:url(#arrow2)" d="M825 86 L865 86"></path>
+
+          <rect class="node node-green" x="180" y="205" width="680" height="92"></rect>
+          <text class="title" x="520" y="238">สิ่งที่ต้องอยู่ใน handoff.md</text>
+          <text class="small" x="520" y="260">ทำอะไรเสร็จแล้ว / ค้างอะไร / ไฟล์ที่แตะ / วิธีตรวจ / next action</text>
+          <text class="small" x="520" y="280">เป้าหมายคือให้ AI ตัวถัดไปอ่านแล้วทำต่อได้ทันที ไม่ต้องเดา</text>
+
+          <path class="line line-green" style="marker-end:url(#arrow2)" d="M530 124 L530 205"></path>
+        </svg>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">H1</div>
+          <strong>Owner หยุดแบบมีหลักฐาน</strong>
+          <p>ก่อนออกจากงาน ต้องเขียนว่าแก้ถึงไหน เหลืออะไร และไฟล์สำคัญอยู่ตรงไหน</p>
+        </div>
+        <div class="step">
+          <div class="num">H2</div>
+          <strong>เขียน <code>handoff.md</code></strong>
+          <p>บันทึก status, blockers, touched files, verification, next action</p>
+        </div>
+        <div class="step">
+          <div class="num">H3</div>
+          <strong>โอนงานผ่านคำสั่ง</strong>
+          <p><code>node scripts/war-room.js handoff TASK_ID --agent FROM --to TO --note "..."</code></p>
+        </div>
+        <div class="step">
+          <div class="num">H4</div>
+          <strong>AI ถัดไปรับต่อ</strong>
+          <p>อ่าน <code>brief.md</code>, <code>task-map.md</code>, <code>handoff.md</code>, แล้ว claim lock ก่อนแก้ไฟล์</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>คำอธิบายสั้นสำหรับสอนเพื่อน</h2>
+      <div class="talk">
+        B3 HiveMind คือระบบทำงานเป็นทีมของ AI หลายตัว โดยมี War Room เป็นสมุดกลาง
+        เวลาจะส่งงานให้ AI อีกตัว ระบบจะสร้างไฟล์ trigger ลงกล่อง <code>triggers/</code>
+        แล้ว watcher จะปลุก AI เป้าหมายขึ้นมาทำงาน ผลงานถูกเก็บใน <code>sessions/</code>
+        ทำให้คนหรือ AI ตัวอื่นมาต่อได้ ไม่ต้องเริ่มใหม่ และตรวจย้อนหลังได้ทุกขั้นตอน
+      </div>
+    </section>
+  </main>
+</body>
+</html>
