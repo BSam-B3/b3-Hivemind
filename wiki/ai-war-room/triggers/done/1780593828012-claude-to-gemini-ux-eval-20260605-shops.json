@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "ux-eval-20260605-shops",
+  "instruction": "Browse https://jong-jaroen.vercel.app/marketplace/shops → ประเมิน UX ตาม prompt ใน C:/Users/PC/Desktop/B3-Second-Brain/wiki/ai-war-room/sessions/2026-06-05-multi-model-ux-evaluation/prompt-score-only.md → เขียนผลลงไฟล์ C:/Users/PC/Desktop/B3-Second-Brain/wiki/ai-war-room/sessions/2026-06-05-multi-model-ux-evaluation/gemini-scorecard.md โดยใช้ format ตาม prompt-score-only.md (model: gemini)",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604172347-g3d7xz",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T17:23:47.696Z"
+}

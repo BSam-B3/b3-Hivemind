@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "2026-06-05-marketplace-p0-fix-sprint-review-v2",
+  "instruction": "Review P0 fix sprint using wiki/ai-war-room/sessions/2026-06-05-marketplace-p0-fix-sprint/codex-patch-summary.md, brief.md, and task-map.md. Do not require direct repo access. Confirm whether P0 trust/category/product-fallback issues are fixed, and list remaining P1 risks. Write review to wiki/ai-war-room/sessions/2026-06-05-marketplace-p0-fix-sprint/claude-review.md.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604173921-r8j4o1",
+  "hopCount": 0,
+  "maxHops": 1,
+  "createdAt": "2026-06-04T17:39:21.884Z"
+}

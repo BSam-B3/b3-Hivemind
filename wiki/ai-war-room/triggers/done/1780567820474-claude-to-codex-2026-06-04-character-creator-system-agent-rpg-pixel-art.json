@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "2026-06-04-character-creator-system-agent-rpg-pixel-art",
+  "instruction": "Phase 2: สร้าง ColorSwapCanvas.tsx + ColorPicker.tsx สำหรับ Character Creator — อ่าน INBOX-CODEX.md ที่มีอยู่ใน wiki/ai-war-room/triggers/ แล้ว implement ใน C:/Users/PC/Desktop/b3-team-avenger/app/agents/create/",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604101020-pmsyx8",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T10:10:20.162Z"
+}

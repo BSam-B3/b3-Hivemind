@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-zone-sponsorships-admin-20260606",
+  "instruction": "Create app/admin/zones/sponsorships/page.tsx in jong-jaroen (c:/Users/PC/Desktop/jong-jaroen). Admin page listing all zone_sponsorships joined with jj_zones and sponsor_packages. Show: shop_id, zone name, package (bronze/silver/gold badge), starts_at, ends_at, status (active/expired/cancelled). Filter by status. Use sbServer(). Dark theme, orange accent. When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606085415-yj8d59",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:54:15.374Z"
+}

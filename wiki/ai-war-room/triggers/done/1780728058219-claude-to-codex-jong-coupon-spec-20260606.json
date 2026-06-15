@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-coupon-spec-20260606",
+  "instruction": "Write coupon system spec for Jong Jaroen: types (% discount, fixed THB, free delivery), constraints (per-user limit, expiry, zone-scoped, sponsor vs platform funded), redemption flow. Output DB schema + spec to wiki/to-b3/CODEX-RETURN-coupon-spec-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606041901-inibuz",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:19:01.970Z"
+}

@@ -1,0 +1,13 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jobboard-page-redesign-20260609",
+  "instruction": "Redesign app/job-board/page.tsx in C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen. Apply full-bleed gradient header bg-[linear-gradient(145deg,#D93414_0%,#EE4D2D_48%,#FF7337_82%,#FFB22B_100%)] rounded-b-[2.5rem] px-5 pt-10 pb-10, dot overlay, top shine, section label JOB BOARD text-orange-200, title <em>MY</em> <span>JOBS</span>. Remove card wrapper. Main content mx-auto max-w-2xl px-4. Fix old import if present. npx tsc --noEmit.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260609151210-6a2ik7",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T15:12:10.868Z",
+  "_requeued": true
+}

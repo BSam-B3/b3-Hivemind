@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "gemini",
+  "taskId": "2026-06-05-marketplace-p0-fix-sprint-gemini-review-v2",
+  "instruction": "Do not read outside B3-Second-Brain. Review only this file: wiki/ai-war-room/sessions/2026-06-05-marketplace-p0-fix-sprint/codex-patch-summary.md plus brief.md and task-map.md in the same session. Return pass/fail for P0 fixes: fabricated promo claims, category filtering, product/shop fallback rendering. Also list remaining P1 risks. Write concise review as plain text.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604173921-4gqg4m",
+  "hopCount": 0,
+  "maxHops": 0,
+  "createdAt": "2026-06-04T17:39:21.914Z"
+}

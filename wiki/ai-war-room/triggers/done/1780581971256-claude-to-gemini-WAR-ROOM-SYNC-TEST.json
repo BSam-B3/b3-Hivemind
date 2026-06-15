@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "WAR-ROOM-SYNC-TEST",
+  "instruction": "ทดสอบ Supabase sync — ตอบ: SYNC_OK",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604140610-1x6nyp",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T14:06:10.949Z"
+}

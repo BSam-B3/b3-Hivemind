@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "LOOP-TEST-CODEX-20260605",
+  "instruction": "This is a loop test from Claude. Reply with: [DONE] CODEX ONLINE - loop test received from Claude. Then trigger back: [TRIGGER:claude] CODEX reply: loop test success",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604183002-n8curx",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T18:30:02.667Z"
+}

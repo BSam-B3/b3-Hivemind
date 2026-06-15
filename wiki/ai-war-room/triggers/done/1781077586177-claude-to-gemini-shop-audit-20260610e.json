@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "shop-audit-20260610e",
+  "instruction": "สรุปสั้นๆ ว่า https://jong-jaroen.vercel.app/ เข้าได้ไหม",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260610074625-4nj5ji",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T07:46:25.852Z"
+}

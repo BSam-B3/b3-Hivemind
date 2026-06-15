@@ -1,0 +1,40 @@
+# Dependency directories
+node_modules/
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+tsconfig.tsbuildinfo
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / System files
+.DS_Store
+.tmp.driveupload/
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+.gemini/
+.cursor/
+.openclaw/
+.cache/
+
+# Credentials / Private keys
+wiki/credentials/SUPABASE-CREDENTIALS.md
+wiki/credentials/LLM-KEYS.md
+wiki/credentials/*.md
+!wiki/credentials/README.md
+

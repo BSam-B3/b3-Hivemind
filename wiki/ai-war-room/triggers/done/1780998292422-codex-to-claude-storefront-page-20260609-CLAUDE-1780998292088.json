@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "storefront-page-20260609-CLAUDE-1780998292088",
+  "runId": "run-20260609094452-ercndc",
+  "instruction": "storefront-page-20260609 DONE",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T09:44:52.088Z",
+  "context": ""
+}

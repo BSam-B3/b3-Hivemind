@@ -1,0 +1,49 @@
+name: B3 HiveMind Security Guard
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Verify Contributor Access
+        run: |
+          # รับชื่อผู้พุชโค้ดบน GitHub
+          ACTOR="${{ github.actor }}"
+          echo "👤 Contributor: $ACTOR"
+          
+          # หากเป็นคุณบีสาม (เจ้าของระบบ) ให้ผ่านฉลุย
+          if [ "$ACTOR" = "BSam-B3" ]; then
+            echo "✅ เจ้าของระบบทำการพุชโค้ด ผ่านการตรวจสอบโดยสมบูรณ์"
+            exit 0
+          fi
+          
+          # ตรวจสอบไฟล์ที่ถูกแก้ไขใน commit ล่าสุด
+          CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r HEAD)
+          echo "📂 ไฟล์ที่ถูกแก้ไข:"
+          echo "$CHANGED_FILES"
+          
+          # บังคับกติกา: ห้ามโมเดล/เพื่อนแก้ไขไฟล์ภายนอกวิกิกักกันโรคและบันทึกร่วม
+          VIOLATIONS=0
+          for file in $CHANGED_FILES; do
+            if [[ "$file" != wiki/quarantine/* && "$file" != wiki/shared-lessons/* ]]; then
+              echo "❌ ละเมิดกฎความปลอดภัย: ไม่อนุญาตให้แก้ไขไฟล์นอกวิกิร่วม ($file)"
+              VIOLATIONS=$((VIOLATIONS + 1))
+            fi
+          done
+          
+          if [ $VIOLATIONS -gt 0 ]; then
+            echo "⚠️ [Security Warning] กรุณาส่งโค้ดผ่านระเบียบ Pull Request เพื่อให้คุณบีสามตรวจสอบก่อนรวมโค้ดหลัก!"
+            exit 1
+          fi
+          
+          echo "✅ ไฟล์ทั้งหมดเป็นบทเรียนความรู้ที่ปลอดภัยผ่านการตรวจสอบ"

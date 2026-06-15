@@ -1,0 +1,13 @@
+{
+  "from": "claude",
+  "to": "local",
+  "taskId": "shop-audit-prompts-20260610",
+  "instruction": "เขียน AI Prompt ที่ทีม AI ควรรู้สำหรับการทำ UI Audit ระบบ Marketplace ครอบคลุม: 1) วิธีตั้งคำถาม audit หน้า shop listing 2) วิธี audit หน้า checkout 3) วิธีตรวจ mobile UX 4) pattern ที่ควรหลีกเลี่ยง (AI Slop UI) ตามกฎทีม B3 เขียนเป็น markdown พร้อม example prompt สำหรับแต่ละหัวข้อ",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260610071531-pai0he",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T07:15:31.506Z",
+  "localModel": null
+}

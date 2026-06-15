@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-migrations-commit-20260606",
+  "instruction": "In jong-jaroen project: check if supabase/migrations/006_payment_ops_schema.sql, 007_payment_ops_rls.sql, 008_payment_ops_rpcs.sql exist. If yes, git add + git commit with message 'feat(payment): add payment ops migrations 006-008 (schema, RLS, RPCs)'. Write commit result to wiki/to-b3/CODEX-RETURN-migrations-commit-20260606.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260606041826-vqzjbd",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:18:26.128Z"
+}

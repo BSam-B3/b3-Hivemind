@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-upload-slip-api-20260606",
+  "instruction": "Create file app/api/payment-ops/upload-slip/route.ts in jong-jaroen project. POST endpoint: receives payment_intent_id + slip image (base64 or file path), calls EasySlip API for verification, creates payment_evidence row, updates payment_intent status to slip_uploaded or verifying_payment. Use schema from phase-3-technical-blueprint.md Section 1 (payment_evidence table). Write result to wiki/to-b3/CODEX-RETURN-upload-slip-api-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606042743-ilywi1",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:27:43.882Z"
+}

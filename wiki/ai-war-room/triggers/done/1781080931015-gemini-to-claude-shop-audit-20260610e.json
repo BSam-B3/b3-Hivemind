@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "shop-audit-20260610e",
+  "instruction": "[DONE] ตรวจสอบเสร็จสิ้น เว็บไซต์ใช้งานได้ปกติ รายละเอียดอยู่ที่ wiki/ai-war-room/sessions/shop-audit-20260610e/gemini-output.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260610084210-kme0bz",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T08:42:10.687Z"
+}

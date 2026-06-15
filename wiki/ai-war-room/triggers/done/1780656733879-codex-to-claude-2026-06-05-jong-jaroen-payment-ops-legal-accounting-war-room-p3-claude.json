@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room-p3-claude",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/openclaw-dispatch/CLAUDE-PHASE3-LEGAL-ACCOUNTING-REVIEW.md and answer the requested deliverable only.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605105213-iicyo3",
+  "hopCount": 0,
+  "maxHops": 1,
+  "createdAt": "2026-06-05T10:52:13.556Z"
+}

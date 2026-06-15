@@ -1,0 +1,13 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-cit-onsite-form-20260606",
+  "instruction": "Create app/staff/onsite/new/page.tsx in cit-service (c:/Users/PC/Desktop/cit-service). Onsite report form: customer selector, technician name from session, date, problem description, work done, parts used list (add/remove rows), total cost auto-sum, status dropdown. POST to /api/staff/onsite. Orange theme #f97316. When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606082712-97xgsa",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:27:12.432Z",
+  "_requeued": true
+}

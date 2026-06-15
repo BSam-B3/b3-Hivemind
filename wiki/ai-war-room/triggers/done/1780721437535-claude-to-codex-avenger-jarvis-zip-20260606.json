@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "avenger-jarvis-zip-20260606",
+  "instruction": "In b3-team-avenger project: create app/api/jarvis/export-zip/route.ts. POST endpoint: receives checklist_id, fetches all jarvis checklist items from DB, downloads attached photos from Supabase Storage, bundles into ZIP using jszip, returns ZIP as binary response with filename jarvis-[id]-[date].zip. Write result to wiki/to-b3/CODEX-RETURN-avenger-jarvis-zip-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606043543-j59gt1",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:35:43.006Z"
+}

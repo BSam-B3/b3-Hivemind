@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "db-cit-onsite-migration-20260606",
+  "instruction": "Create supabase/migrations/020_onsite_reports.sql in cit-service (c:/Users/PC/Desktop/cit-service) for cit_onsite_reports table: customer_code, technician_id, visited_at, problem_desc, work_done, parts_used jsonb, total_cost, status (completed/pending/followup), RLS for technician own-row + admin-all. When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606082734-u4fgt0",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:27:34.686Z"
+}

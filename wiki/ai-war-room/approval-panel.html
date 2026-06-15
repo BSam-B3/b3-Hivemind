@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B3 Approval Panel</title>
+  <style>
+    :root { --bg:#f6f7f8; --panel:#fff; --ink:#172026; --muted:#66727d; --line:#d7dde2; --ok:#0f766e; --bad:#b42318; --wait:#b45309; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Segoe UI", Arial, sans-serif; background:var(--bg); color:var(--ink); }
+    header { padding:18px 22px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; justify-content:space-between; gap:12px; align-items:center; }
+    h1 { margin:0; font-size:22px; }
+    main { max-width:980px; margin:0 auto; padding:20px; display:grid; gap:14px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px; display:grid; gap:10px; }
+    .meta { color:var(--muted); font-size:13px; display:flex; gap:10px; flex-wrap:wrap; }
+    code { background:#eef2f3; padding:2px 5px; border-radius:4px; }
+    button { border:1px solid var(--line); border-radius:7px; padding:10px 12px; font-weight:700; cursor:pointer; background:#fff; }
+    .approve { color:var(--ok); border-color:#8fd0c7; }
+    .reject { color:var(--bad); border-color:#f1a19a; }
+    .pending { color:var(--wait); border-color:#f0c48a; }
+    .actions { display:flex; gap:8px; flex-wrap:wrap; }
+    .empty { color:var(--muted); padding:28px; text-align:center; background:var(--panel); border:1px dashed var(--line); border-radius:8px; }
+    textarea { width:100%; min-height:56px; resize:vertical; border:1px solid var(--line); border-radius:7px; padding:9px; font-family:inherit; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>B3 Approval Panel</h1>
+      <div class="meta">Click a button. No terminal commands needed.</div>
+    </div>
+    <button onclick="load()">Refresh</button>
+  </header>
+  <main>
+    <section id="watch" class="card"></section>
+    <section id="list"></section>
+  </main>
+  <script>
+    async function json(url, options) {
+      const res = await fetch(url, options);
+      const data = await res.json();
+      if (!res.ok || data.ok === false) throw new Error(data.error || 'Request failed');
+      return data;
+    }
+    async function setApproval(id, action) {
+      const note = document.getElementById('note-' + id)?.value || '';
+      await json('/api/approvals/' + encodeURIComponent(id) + '/' + action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ note })
+      });
+      await load();
+    }
+    function row(ap) {
+      return '<article class="card">' +
+        '<div><strong><code>' + ap.id + '</code> ' + ap.type + '</strong></div>' +
+        '<div>' + (ap.reason || '') + '</div>' +
+        '<div class="meta"><span>Task: <code>' + (ap.task_id || 'n/a') + '</code></span><span>Status: ' + ap.status + '</span><span>By: ' + ap.requested_by + '</span></div>' +
+        '<textarea id="note-' + ap.id + '" placeholder="Optional note for the team"></textarea>' +
+        '<div class="actions">' +
+          '<button class="approve" onclick="setApproval(\\'' + ap.id + '\\', \\'approve\\')">Approve</button>' +
+          '<button class="reject" onclick="setApproval(\\'' + ap.id + '\\', \\'reject\\')">Reject</button>' +
+          '<button class="pending" onclick="setApproval(\\'' + ap.id + '\\', \\'pending\\')">Keep Pending</button>' +
+        '</div>' +
+      '</article>';
+    }
+    async function load() {
+      const approvals = await json('/api/approvals');
+      const watch = await json('/api/watch').catch(() => null);
+      const pending = approvals.approvals.filter(a => a.status === 'pending');
+      document.getElementById('watch').innerHTML = watch
+        ? '<strong>System</strong><div class="meta">Active tasks: ' + watch.active_tasks + ' | Locks: ' + watch.locks + ' | Warnings: ' + watch.warnings.length + '</div>'
+        : '<strong>System</strong><div class="meta">Watch unavailable</div>';
+      document.getElementById('list').innerHTML = pending.length
+        ? pending.map(row).join('')
+        : '<div class="empty">No pending approvals</div>';
+    }
+    load();
+    setInterval(load, 10000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "TT-reminder-0606",
+  "instruction": "มี 2 Think Tank รอความเห็นอยู่: (1) wiki/ai-war-room/think-tank/TT-2026-06-06-delivery-ride-payout-architecture-jjwall.md (2) wiki/ai-war-room/think-tank/TT-2026-06-06-semi-auto-payout-threshold-500.md อ่านแล้วเพิ่ม [THOUGHT:codex] ต่อท้ายทั้ง 2 ไฟล์",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260606024738-31lnve",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T02:47:38.877Z"
+}

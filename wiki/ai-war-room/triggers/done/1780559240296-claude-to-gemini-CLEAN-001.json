@@ -1,0 +1,9 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "CLEAN-001",
+  "instruction": "say: FULL LOOP WORKING",
+  "context": "",
+  "priority": "urgent",
+  "createdAt": "2026-06-04T07:47:19.991Z"
+}

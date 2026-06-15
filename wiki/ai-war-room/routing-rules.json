@@ -1,0 +1,357 @@
+{
+  "version": "2.0",
+  "updated_at": "2026-06-10T14:07:04.472Z",
+  "description": "Agent routing rules — ใช้ตัดสินว่างานประเภทไหนส่งใคร",
+  "rules": [
+    {
+      "id": "quick-qa",
+      "label": "คำถามง่าย / Q&A / ข้อมูลทั่วไป",
+      "keywords": [
+        "คืออะไร",
+        "อธิบาย",
+        "สรุป",
+        "ช่วยคิด",
+        "แนะนำ",
+        "เปรียบเทียบ",
+        "ถาม",
+        "explain",
+        "what is",
+        "summarize"
+      ],
+      "owner": "groq",
+      "helpers": [],
+      "reviewer": null,
+      "note": "Groq ฟรีไม่จำกัด — ใช้ก่อนเสมอสำหรับ Q&A ง่ายๆ ไม่ต้องเสียเครดิต Claude/Gemini",
+      "openclaw_capable": true
+    },
+    {
+      "id": "ui-frontend",
+      "label": "UI / Frontend / Styling",
+      "keywords": [
+        "responsive",
+        "tailwind",
+        "layout",
+        "component",
+        "page",
+        "css",
+        "design",
+        "mobile",
+        "ui",
+        "ux"
+      ],
+      "owner": "codex",
+      "helpers": [],
+      "reviewer": "claude",
+      "auto_trigger": true,
+      "trigger_flow": "claude detects UI-only task → trigger-ai.js claude→codex → codex implements → codex triggers claude [DONE] → claude review+tsc+push",
+      "note": "AUTO: Claude trigger Codex ทันทีสำหรับงาน UI ล้วนๆ — Codex report กลับ Claude เมื่อเสร็จ",
+      "openclaw_capable": true
+    },
+    {
+      "id": "backend-api",
+      "label": "Backend / API / Database",
+      "keywords": [
+        "api",
+        "route",
+        "supabase",
+        "sql",
+        "rls",
+        "migration",
+        "schema",
+        "endpoint",
+        "backend"
+      ],
+      "owner": "claude",
+      "helpers": [
+        "codex"
+      ],
+      "reviewer": null,
+      "note": "Claude ทำเอง — ไม่ต้องการ external reviewer",
+      "openclaw_capable": true
+    },
+    {
+      "id": "research-architecture",
+      "label": "Research / Architecture / Analysis",
+      "keywords": [
+        "research",
+        "analyze",
+        "feasibility",
+        "architecture",
+        "design system",
+        "strategy",
+        "compare"
+      ],
+      "owner": "gemini",
+      "helpers": [],
+      "reviewer": "claude",
+      "note": "Gemini ทำ web search + browse live URL ได้ใน interactive mode — ใช้ดู design reference / audit live site / social media intel",
+      "openclaw_capable": true,
+      "openclaw_limitation": "text-only output, no file write"
+    },
+    {
+      "id": "ui-visual-audit",
+      "label": "UI Visual Audit / Design Review / Browse Live Site",
+      "keywords": [
+        "ดูเว็บ",
+        "audit ui",
+        "design review",
+        "browse",
+        "screenshot",
+        "visual",
+        "live site",
+        "shopee",
+        "reference",
+        "เทียบ",
+        "หน้าตา"
+      ],
+      "owner": "gemini",
+      "helpers": [
+        "codex"
+      ],
+      "reviewer": "claude",
+      "auto_trigger": true,
+      "trigger_flow": "claude detects browse-needed → trigger-ai.js claude→gemini → OpenClaw watcher calls gemini CLI → gemini browses URL → writes GEMINI-RETURN → claude implements on next session",
+      "note": "AUTO: Claude trigger Gemini ทันทีที่งานต้องการ browse URL — ไม่ต้องรอ B3 สั่ง"
+    },
+    {
+      "id": "security-audit",
+      "label": "Security / Secrets / Audit",
+      "keywords": [
+        "security",
+        "secret",
+        "auth",
+        "permission",
+        "rls",
+        "vulnerability",
+        "audit",
+        "token"
+      ],
+      "owner": "claude",
+      "helpers": [],
+      "reviewer": null,
+      "note": "Claude จัดการ — Sec persona เป็น manual review เท่านั้น ไม่ใช่ automated agent",
+      "openclaw_capable": true
+    },
+    {
+      "id": "qa-testing",
+      "label": "QA / Testing / Build Check",
+      "keywords": [
+        "test",
+        "qa",
+        "regression",
+        "smoke",
+        "e2e",
+        "verify",
+        "build",
+        "tsc",
+        "check"
+      ],
+      "owner": "claude",
+      "helpers": [],
+      "reviewer": null,
+      "note": "Qara/Choe เป็น persona ไม่ใช่ automated agent — Claude รัน tsc + build check เองผ่าน quality gate",
+      "openclaw_capable": true
+    },
+    {
+      "id": "infra-devops",
+      "label": "Infra / DevOps / Deploy",
+      "keywords": [
+        "deploy",
+        "vercel",
+        "github actions",
+        "cron",
+        "env",
+        "docker",
+        "ci",
+        "cd",
+        "pipeline"
+      ],
+      "owner": "claude",
+      "helpers": [
+        "codex"
+      ],
+      "reviewer": null,
+      "note": "Claude เขียน config + push — Vercel auto-deploy",
+      "openclaw_capable": true
+    },
+    {
+      "id": "data-bulk",
+      "label": "Bulk Data / CSV / Reports",
+      "keywords": [
+        "csv",
+        "import",
+        "export",
+        "bulk",
+        "report",
+        "pdf",
+        "excel",
+        "data processing"
+      ],
+      "owner": "gemini",
+      "helpers": [
+        "claude"
+      ],
+      "reviewer": "claude",
+      "note": "Gemini ประมวลผล bulk data (1M context) — Claude implement",
+      "openclaw_capable": true,
+      "openclaw_limitation": "text-only output"
+    }
+  ],
+  "agent_capabilities": {
+    "claude": {
+      "openclaw": true,
+      "file_write": true,
+      "web_search": false,
+      "timeout_s": 120,
+      "cost": "paid",
+      "best_for": "backend, API, complex logic, quality gate, synthesis"
+    },
+    "gemini": {
+      "openclaw": true,
+      "file_write": false,
+      "web_search": true,
+      "browse_live_url": true,
+      "read_social_media": true,
+      "timeout_s": 120,
+      "cost": "paid",
+      "best_for": "Research, Architecture, UI visual audit (browse live site), social media intel, large context (1M tokens)",
+      "note": "Interactive mode = web search + browse URL + social media ได้ | Automation/OpenClaw = text output เท่านั้น (no file write)"
+    },
+    "codex": {
+      "openclaw": true,
+      "file_write": true,
+      "web_search": false,
+      "timeout_s": 600,
+      "cost": "paid",
+      "best_for": "code generation, UI components — ต้องการ quality gate จาก Claude เสมอ"
+    },
+    "groq": {
+      "openclaw": false,
+      "file_write": false,
+      "web_search": false,
+      "timeout_s": 10,
+      "cost": "free",
+      "best_for": "Q&A ง่าย, สรุป, คำถามทั่วไป — ใช้ก่อนเสมอเพื่อประหยัด cost"
+    },
+    "local": {
+      "openclaw": true,
+      "file_write": true,
+      "web_search": false,
+      "timeout_s": 60,
+      "cost": "free (CPU only)",
+      "models": {
+        "coding": "qwen2.5-coder:3b",
+        "analysis": "qwen2.5:3b"
+      },
+      "gateway": "http://127.0.0.1:11434/v1 (Ollama Native)",
+      "best_for": "งานเล็กฟรี — gradient header, rename, format, quick fix, log analysis",
+      "keywords": [
+        "utility", "format", "formatdate", "slugify", "camelcase", "snake_case",
+        "อธิบาย", "สรุป", "summarize", "explain", "แปลง", "convert",
+        "sql", "select", "join", "type ", "interface ", "typescript type",
+        "draft comment", "docstring", "วิเคราะห์ log", "log analysis", "rename", "quick fix"
+      ],
+      "usage": "node scripts/trigger-ai.js --from claude --to local --task id --instruction '...' [--local-model qwen2.5-coder:3b]",
+      "note": "ต้องรัน Ollama Native ก่อน — ตรวจสอบด้วย node scripts/local-doctor.js"
+    }
+  },
+  "inactive_personas": {
+    "note": "Personas เหล่านี้มีอยู่ใน wiki/ai-team/ แต่ไม่ได้รัน automated — เป็น prompt templates เท่านั้น",
+    "personas": [
+      "qara",
+      "choe",
+      "enjoy",
+      "sec",
+      "ferin",
+      "finley",
+      "kitti",
+      "metha",
+      "raps",
+      "win",
+      "karn",
+      "nam",
+      "nara",
+      "pim",
+      "nhon",
+      "kom"
+    ]
+  },
+  "escalation": {
+    "blocked": "claude",
+    "context_limit": "gemini (interactive — ส่ง GEMINI-INSTRUCTIONS.md)",
+    "urgent": "claude (CMD 9 — รับงานต่อทันที)",
+    "simple_question": "groq (npm run war:groq)"
+  },
+  "local_eligible_keywords": [
+    "utility function",
+    "format",
+    "formatdate",
+    "slugify",
+    "camelcase",
+    "snake_case",
+    "อธิบาย",
+    "สรุป",
+    "summarize",
+    "explain",
+    "แปลง",
+    "convert",
+    "sql",
+    "select",
+    "join",
+    "type ",
+    "interface ",
+    "typescript type",
+    "draft comment",
+    "docstring",
+    "วิเคราะห์ log",
+    "log analysis",
+    "rename",
+    "calculate",
+    "parse",
+    "trim",
+    "validate string",
+    "regex",
+    "แปลภาษา"
+  ],
+  "local_eligible_note": "Keywords ที่ task นั้น local model รับได้ — ดึงจากนี้แทน hardcode ใน ask-ai.js",
+  "local_feedback": {
+    "last_analyzed": "2026-06-10 21:04:32 ICT",
+    "template_stats": {
+      "local-doctor": {
+        "ok": 9,
+        "fail": 5,
+        "total": 14
+      },
+      "ask-local": {
+        "ok": 13,
+        "fail": 4,
+        "total": 17
+      },
+      "local-standup": {
+        "ok": 2,
+        "fail": 5,
+        "total": 7
+      },
+      "local-bench": {
+        "ok": 0,
+        "fail": 6,
+        "total": 6
+      },
+      "local-agent-loop": {
+        "ok": 1,
+        "fail": 0,
+        "total": 1
+      }
+    },
+    "high_fail_templates": [
+      "local-standup",
+      "local-bench"
+    ],
+    "recommendation": "Templates with >40% failure: local-standup, local-bench → consider routing to cloud"
+  },
+  "local_override_to_cloud": [
+    "local-standup",
+    "local-bench"
+  ],
+  "local_override_note": "Templates with >40% fail rate — route to groq/cloud instead of local"
+}

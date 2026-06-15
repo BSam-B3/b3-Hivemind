@@ -1,0 +1,13 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-admin-zones-20260606",
+  "instruction": "Create app/admin/zones/page.tsx in jong-jaroen (c:/Users/PC/Desktop/jong-jaroen). Admin page for zone management. Show all jj_zones in a table: name, zone_type, is_active, parent_id (show parent zone name). Each row: toggle is_active button (calls Supabase update). Use sbServer() for data fetch, sbAdmin for mutations via server action or API route. Dark theme, orange accent (#f97316). When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606082653-rdtva1",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:26:53.176Z",
+  "_requeued": true
+}

@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "2026-06-04-character-creator-system-agent-rpg-pixel-art",
+  "instruction": "Phase 2: Canvas layer-based color swap — อ่าน INBOX-CODEX.md แล้ว implement ColorSwapCanvas.tsx + ColorPicker.tsx",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604100228-g77g52",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T10:02:28.715Z"
+}

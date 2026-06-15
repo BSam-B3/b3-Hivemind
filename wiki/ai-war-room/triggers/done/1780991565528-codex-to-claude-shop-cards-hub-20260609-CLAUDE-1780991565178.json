@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "shop-cards-hub-20260609-CLAUDE-1780991565178",
+  "runId": "run-20260609075245-7540ex",
+  "instruction": "shop-cards-hub-20260609 DONE",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T07:52:45.178Z",
+  "context": ""
+}

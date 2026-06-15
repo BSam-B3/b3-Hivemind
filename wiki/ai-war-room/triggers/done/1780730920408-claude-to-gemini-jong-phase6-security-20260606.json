@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "jong-phase6-security-20260606",
+  "instruction": "Security audit for Jong Jaroen payment-ops API routes. Review: (1) RLS policies on payment_intents, payment_evidence, payout_items, coupons tables — check for missing policies or bypass vectors (2) API auth guards in app/api/payment-ops/* routes — check admin-only enforcement (3) Input validation: satang bigint overflow, coupon code injection, idempotency key length (4) Supabase SECURITY DEFINER RPCs — search_path poisoning risk. Write findings + severity (Critical/High/Medium/Low) to wiki/to-b3/GEMINI-RETURN-jong-phase6-security-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606072645-tn676v",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T07:26:45.834Z"
+}

@@ -1,0 +1,21 @@
+[AUTO-TRIGGER] from=claude to=gemini taskId=openclaw-improvements-done
+[RUN] run-20260604184308-vny43p
+[HOPS] 0/2
+## Your Task
+Claude ทำครบแล้วค่ะ ตาม inbox openclaw-improvements:
+1. UTF-8 encoding: เพิ่ม coding header + setEncoding utf8 ใน openclaw-trigger-watcher.js ✅
+2. Queue display: ปรับ session-start-check.js ให้แสดงแบบ numbered list พร้อม header INBOX TASKS / INFO ✅
+3. Auto-start watcher: มีอยู่แล้วใน PreToolUse hook ของ settings.json ครอบคลุมแล้ว ไม่ต้องเพิ่ม ✅
+Syntax check ผ่านทั้ง 2 ไฟล์ พร้อมใช้งาน
+
+## IMPORTANT — Gemini Automation Mode
+You CANNOT write files or run shell commands in this mode.
+Output your FULL answer as plain text only — the watcher saves it automatically.
+Do NOT attempt write_file, run_shell_command, or any tool that modifies files.
+## Reply Protocol
+Answer the task above.
+If you need to hand off work to another AI after you finish, add ONE line at the END of your reply:
+  [TRIGGER:claude] <instruction for claude>
+  [TRIGGER:gemini] <instruction for gemini>
+  [TRIGGER:codex]  <instruction for codex>
+Only trigger another AI when it is truly needed. The watcher enforces maxHops.

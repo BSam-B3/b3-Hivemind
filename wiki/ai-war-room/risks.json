@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "risks": [
+    {
+      "id": "R-001",
+      "area": "coordination",
+      "severity": "medium",
+      "status": "open",
+      "owner": "team",
+      "description": "Active tasks missing reviewer or final approver can stall finalize."
+    },
+    {
+      "id": "R-002",
+      "area": "security",
+      "severity": "high",
+      "status": "open",
+      "owner": "team",
+      "description": "Sensitive files require protected-file approval before edits."
+    },
+    {
+      "id": "R-003",
+      "area": "governance",
+      "severity": "medium",
+      "status": "open",
+      "owner": "codex",
+      "description": "Architectural or business decisions can be lost if not recorded before finalize.",
+      "created_at": "2026-06-03T16:31:55.144Z"
+    },
+    {
+      "id": "R-004",
+      "area": "general",
+      "severity": "medium",
+      "status": "open",
+      "owner": "codex",
+      "description": "Ledger, payout, and slip verification mismatch risk; requires immutable audit log and duplicate slip controls.",
+      "created_at": "2026-06-05T10:30:34.199Z"
+    },
+    {
+      "id": "R-005",
+      "area": "general",
+      "severity": "medium",
+      "status": "open",
+      "owner": "codex",
+      "description": "Existing Jong Jaroen docs/code contain conflicting fee/payment models: direct P2P, central PromptPay, JJWallet, escrow-like release, and old 3% GP.",
+      "created_at": "2026-06-05T10:30:34.229Z"
+    },
+    {
+      "id": "R-006",
+      "area": "general",
+      "severity": "medium",
+      "status": "open",
+      "owner": "codex",
+      "description": "Potential Thai payment/e-money/payment-agent classification risk if Jong Jaroen receives customer funds and later pays workers.",
+      "created_at": "2026-06-05T10:30:34.242Z"
+    }
+  ],
+  "updated_at": "2026-06-05T10:30:34.242Z"
+}

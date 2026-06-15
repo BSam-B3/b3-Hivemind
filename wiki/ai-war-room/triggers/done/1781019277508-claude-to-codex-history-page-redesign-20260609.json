@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "history-page-redesign-20260609",
+  "instruction": "Redesign app/history/page.tsx in C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen. Remove MOCK_HISTORY array entirely. Replace with real data from supabase — query table 'job_history' or 'jobs' (check which exists via: select * from jobs limit 1). Apply gradient header MY HISTORY. Use createClient from @/lib/supabase/client. Run npx tsc --noEmit.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260609151203-cy4kly",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T15:12:03.412Z"
+}

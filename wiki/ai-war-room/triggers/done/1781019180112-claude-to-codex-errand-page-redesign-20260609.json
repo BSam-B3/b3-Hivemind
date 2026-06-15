@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "errand-page-redesign-20260609",
+  "instruction": "Redesign app/errand/page.tsx in C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen. Apply full-bleed gradient header: bg-[linear-gradient(145deg,#D93414_0%,#EE4D2D_48%,#FF7337_82%,#FFB22B_100%)] rounded-b-[2.5rem] px-5 pt-10 pb-10, dot overlay, top shine, section label text-orange-200 uppercase tracking-widest, title format <em>MY</em> <span>ERRAND</span>. Remove any card wrapper (w-full max-w-2xl bg-white/gray). Main content: mx-auto w-full max-w-2xl px-4. Fix import if still using @/lib/supabase — change to createClient from @/lib/supabase/client. Run npx tsc --noEmit before done. Do NOT change logic/data fetching.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260609151149-ustho4",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T15:11:49.200Z"
+}

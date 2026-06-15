@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "product-image-carousel-20260610",
+  "instruction": "แก้ไฟล์ C:\\Users\\CIT-COMPUTER-001\\Desktop\\jong-jaroen\\app\\marketplace\\shops\\[id]\\page.tsx\n\nDB products มี: images text[], image_url text, promo_video_url text\n\nใน product card และ product detail section:\n1. แทนที่ img เดียว (product.image_url) ด้วย image carousel\n   - แสดงรูปจาก images[] ถ้าว่าง fallback image_url\n   - ถ้ามีรูปเดียวไม่ต้องมี dots/arrow\n   - ถ้ามีหลายรูป: dot indicators ด้านล่าง, กดซ้าย-ขวาเปลี่ยนรูปได้\n   - ใช้ useState สำหรับ activeIndex ต่อ product\n2. ถ้า promo_video_url มีค่า แสดง badge 'มีวิดีโอ 🎬' บน thumbnail\n3. ห้ามใช้ library เพิ่ม — ใช้แค่ Tailwind + React state",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260610160531-03wd16",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T16:05:31.744Z"
+}

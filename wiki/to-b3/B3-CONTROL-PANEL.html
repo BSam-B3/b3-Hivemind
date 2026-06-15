@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B3 Control Panel</title>
+  <style>
+    body { margin: 0; font-family: "Segoe UI", Tahoma, sans-serif; background: #f6f7f9; color: #1f2937; }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 18px 48px; }
+    h1 { margin: 0 0 6px; font-size: 30px; }
+    h2 { margin-top: 28px; font-size: 20px; }
+    .muted { color: #6b7280; }
+    .status { display: inline-block; padding: 8px 12px; border-radius: 8px; font-weight: 700; }
+    .status.ok { background: #dcfce7; color: #166534; }
+    .status.warn { background: #fef3c7; color: #92400e; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 16px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; }
+    .num { display: block; font-size: 28px; font-weight: 800; margin-top: 4px; }
+    ul { padding-left: 22px; }
+    code { background: #eef2f7; padding: 2px 5px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>B3 Control Panel</h1>
+    <div class="muted">อัปเดตล่าสุด: 2026-06-04T10:04:51.665Z</div>
+    <p><span class="status warn">มีเรื่องที่ควรดู</span></p>
+    <div class="grid">
+      <div class="card">OpenClaw watcher<span class="num">PID 29196</span></div>
+      <div class="card">Trigger ค้าง<span class="num">0</span></div>
+      <div class="card">Prompt temp ค้าง<span class="num">0</span></div>
+      <div class="card">ต้องกู้/ส่งต่อ<span class="num">2</span></div>
+      <div class="card">รออนุมัติ<span class="num">0</span></div>
+      <div class="card">Watchdog sessions<span class="num">3</span></div>
+    </div>
+    <h2>สิ่งที่ต้องให้บีสามตัดสินใจ</h2>
+    <ul><li>ไม่มี</li></ul>
+    <h2>งานที่ควรดู</h2>
+    <ul><li>2026-06-04-character-creator-system-agent-rpg-pixel-art: no_output -> manual_recovery</li><li>2026-06-04-research-pixel-sprite-animation-architecture: token_or_context_limit -> manual_recovery</li></ul>
+    <h2>คำสั่งที่ใช้บ่อย</h2>
+    <ul>
+      <li>เช็กสุขภาพทีม: <code>npm run b3:check</code></li>
+      <li>กู้ task: <code>npm run trigger:recover -- TASK_ID</code></li>
+      <li>สรุปวันนี้: <code>npm run team:digest</code></li>
+      <li>เปิด War Room: <code>npm run war:standup</code></li>
+    </ul>
+  </main>
+</body>
+</html>

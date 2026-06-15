@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "gemini",
+  "taskId": "LINK-EXTRACT-001",
+  "instruction": "Open https://www.facebook.com/reel/4185269761689739 and return CMD 12 format. Facts only, no guessing. If inaccessible, say inaccessible clearly.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604090720-wy0ixh",
+  "hopCount": 0,
+  "maxHops": 0,
+  "createdAt": "2026-06-04T09:07:20.508Z"
+}

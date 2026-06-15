@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "test-trigger-check",
+  "instruction": "ทดสอบระบบทริกเกอร์ กรุณาตอบกลับข้อความนี้เพื่อยืนยันว่าได้รับข้อความแล้วค่ะ",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604183041-1jki1v",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T18:30:41.233Z"
+}

@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "db-cit-onsite-migration-20260606",
+  "runId": "run-20260606082734-u4fgt0-CODEX-DONE",
+  "instruction": "[DONE] Created cit-service supabase/migrations/020_onsite_reports.sql for cit_onsite_reports with requested columns, status constraint, technician own-row RLS, and admin-all RLS.",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:45:00.000Z",
+  "context": "Output written to wiki/ai-war-room/sessions/db-cit-onsite-migration-20260606/codex-output.md"
+}

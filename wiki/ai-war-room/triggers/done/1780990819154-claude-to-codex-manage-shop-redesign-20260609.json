@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "manage-shop-redesign-20260609",
+  "instruction": "Edit C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen/app/marketplace/manage-shop/page.tsx — remove card-style wrapper: change outer div from 'min-h-screen bg-[#F8FAFC] pb-32 flex justify-center font-sans' to 'min-h-screen bg-[#F4F6F8] font-sans pb-32', remove inner div 'w-full max-w-2xl bg-[#F8FAFC] min-h-screen relative flex flex-col md:shadow-2xl md:border-x border-gray-200/50'. Move header outside any max-w wrapper so it is full-bleed. Change header from bg-white to gradient: bg-[linear-gradient(145deg,#D93414_0%,#EE4D2D_48%,#FF7337_82%,#FFB22B_100%)] rounded-b-[2.5rem] px-5 pt-10 pb-10. Add dot overlay + top shine. Back link: ← กลับ text link. Keep all logic. Run npx tsc --noEmit. Reply [TRIGGER:claude] manage-shop-redesign-20260609 DONE",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260609073227-nx1yg2",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T07:32:27.897Z"
+}

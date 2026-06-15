@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "CODEX-TEST-FIX",
+  "instruction": "Reply with exactly: OPENCLAW_CODEX_FIXED",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604100843-qfgdc3",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T10:08:43.540Z"
+}

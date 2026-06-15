@@ -1,0 +1,12 @@
+[AUTO-TRIGGER] from=claude to=codex taskId=gradient-services-new-20260610
+[RUN] run-20260609172843-pzmvp6
+[HOPS] 0/2
+## Your Task
+Apply gradient header to app/services/new/page.tsx in C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen. bg-[linear-gradient(145deg,#D93414_0%,#EE4D2D_48%,#FF7337_82%,#FFB22B_100%)] rounded-b-[2.5rem] px-5 pt-10 pb-10, dot overlay, top shine, back '← กลับ', label text-orange-200 'SERVICES', title <em>NEW</em> <span>SERVICE</span>. Keep logic. Fix import if needed. npx tsc --noEmit.
+## Reply Protocol
+Answer the task above.
+If you need to hand off work to another AI after you finish, add ONE line at the END of your reply:
+  [TRIGGER:claude] <instruction for claude>
+  [TRIGGER:gemini] <instruction for gemini>
+  [TRIGGER:codex]  <instruction for codex>
+Only trigger another AI when it is truly needed. The watcher enforces maxHops.

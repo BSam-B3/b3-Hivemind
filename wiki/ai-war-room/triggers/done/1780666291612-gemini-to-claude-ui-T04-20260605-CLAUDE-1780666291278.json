@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "ui-T04-20260605-CLAUDE-1780666291278",
+  "runId": "run-20260605133131-4tpsfg",
+  "instruction": "Gemini has generated the `page.tsx` and `route.ts` files for the Payout Batch Management Page and the Approve Payout API. Please write these files to `jong-jaroen/app/admin/finance/payout-batches/page.tsx` and `jong-jaroen/app/api/admin/payout/approve/route.ts` respectively, then create `wiki/ai-war-room/triggers/DONE-gemini-T04.md` to confirm completion.",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T13:31:31.278Z",
+  "context": ""
+}

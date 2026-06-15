@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "codex-self-improve-20260605",
+  "instruction": "implement your own 10 improvements from Think Tank TT-2026-06-05-10-ways-each-ai-can-improve-itself-and-t. Your 10 items were about code quality for the 3 projects. Do what you can right now:\n1. Create npm run verify script in each project (cit-service, b3-team-avenger, jong-jaroen) that runs tsc + lint\n2. Create .github/pull_request_template.md for each project with short checklist\n3. Create wiki/known-failures/ playbook for each project\n4. Add pre-commit hook setup instructions to each project README\nFor items needing more context ask Claude via [TRIGGER:claude]. Write output to wiki/ai-war-room/sessions/codex-self-improve-20260605/ and end with FINAL: or [TRIGGER:claude]",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605045119-hyfxdo",
+  "hopCount": 0,
+  "maxHops": 1,
+  "createdAt": "2026-06-05T04:51:19.606Z"
+}

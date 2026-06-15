@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-verify-payment-route-20260606",
+  "instruction": "Create app/api/payment-ops/verify-payment/route.ts in jong-jaroen. POST endpoint: receives payment_evidence_id, calls Supabase RPC verify_payment_evidence (from migration 008), updates payment_intent status to open_for_worker on pass or payment_flagged on fail. Write result to wiki/to-b3/CODEX-RETURN-verify-payment-route-20260606.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260606043430-23dm4b",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:34:30.044Z"
+}

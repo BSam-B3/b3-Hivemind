@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "browse-marketplace-audit-20260604",
+  "instruction": "Browse https://jong-jaroen.vercel.app/marketplace/shops แล้วทำ UI audit ดังนี้: 1) Screenshot / describe หน้าตาที่เห็น 2) ดู Carousel section ว่า active card มีกรอบทองไหม มงกุฎไหม 3) เทียบกับ https://shopee.co.th/mall แถว brand row 4) ระบุ gap ที่ยังต่างกัน 5) เขียน spec แก้ไขที่ชัดเจนให้ Codex implement ได้เลย แล้วเขียนผลลงไฟล์ wiki/to-b3/GEMINI-RETURN-browse-marketplace-audit-20260604.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604162145-uaeb7a",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T16:21:45.648Z"
+}

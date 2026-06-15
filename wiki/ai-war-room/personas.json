@@ -1,0 +1,98 @@
+{
+  "version": "1.0",
+  "continuity": {
+    "default_fallback_order": [
+      "codex",
+      "gemini",
+      "claude",
+      "qara"
+    ],
+    "role_fallbacks": {
+      "coordinator": [
+        "codex",
+        "gemini",
+        "claude"
+      ],
+      "reviewer": [
+        "qara",
+        "gemini",
+        "codex"
+      ],
+      "implementer": [
+        "codex",
+        "gemini",
+        "enjoy"
+      ]
+    },
+    "token_limit_protocol": [
+      "Record current state in handoff.md or chat.md",
+      "Release locks held by the limited agent",
+      "Assign next owner from role fallback order",
+      "Post a continuity checkpoint in chat.md",
+      "Run standup, doctor, and dashboard"
+    ]
+  },
+  "personas": [
+    {
+      "id": "claude",
+      "strengths": [
+        "planning",
+        "coordination",
+        "review",
+        "product reasoning"
+      ],
+      "default_roles": [
+        "coordinator",
+        "reviewer"
+      ]
+    },
+    {
+      "id": "codex",
+      "strengths": [
+        "code implementation",
+        "tooling",
+        "automation",
+        "system safety"
+      ],
+      "default_roles": [
+        "implementer",
+        "systems owner"
+      ]
+    },
+    {
+      "id": "gemini",
+      "strengths": [
+        "research",
+        "summarization",
+        "cross-checking",
+        "content rewrite"
+      ],
+      "default_roles": [
+        "researcher",
+        "reviewer"
+      ]
+    },
+    {
+      "id": "qara",
+      "strengths": [
+        "QA",
+        "test cases",
+        "regression checks"
+      ],
+      "default_roles": [
+        "tester"
+      ]
+    },
+    {
+      "id": "enjoy",
+      "strengths": [
+        "UI implementation",
+        "frontend polish"
+      ],
+      "default_roles": [
+        "owner"
+      ]
+    }
+  ],
+  "updated_at": "2026-06-03T16:31:22.990Z"
+}

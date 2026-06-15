@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "2026-06-05-marketplace-p0-openclaw-relay-claude",
+  "instruction": "OpenClaw relay required. Read wiki/ai-war-room/sessions/2026-06-05-marketplace-p0-fix-sprint/openclaw-relay-protocol.md, codex-patch-summary.md, gemini-review.md, and fix-synthesis.md. Review whether P0 fixes are acceptable. You MUST end your reply with either FINAL: <decision> or [TRIGGER:codex] <exact change request> or [TRIGGER:gemini] <exact validation request>. If approving, also write/ask to write claude-review.md for the sprint.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604175554-2jq5pk",
+  "hopCount": 0,
+  "maxHops": 3,
+  "createdAt": "2026-06-04T17:55:54.756Z"
+}

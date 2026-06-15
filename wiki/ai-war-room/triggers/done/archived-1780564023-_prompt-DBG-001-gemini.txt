@@ -1,0 +1,13 @@
+[AUTO-TRIGGER] from=claude to=gemini taskId=DBG-001
+
+## Your Task
+say: DEBUG OK
+
+
+## Reply Protocol
+When done, write your output to:
+  wiki/ai-war-room/sessions/DBG-001/gemini-output.md
+
+If you need to trigger another AI, drop a JSON file in:
+  wiki/ai-war-room/triggers/{your-name}-to-{target}-DBG-001.json
+  Schema: { "from":"gemini", "to":"claude|gemini|codex", "taskId":"...", "instruction":"..." }

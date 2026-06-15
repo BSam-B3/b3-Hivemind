@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "TEST-V4-CODEX",
+  "instruction": "Reply: QUALITY_GATE_TEST",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604104244-m5gpk7",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T10:42:44.216Z"
+}

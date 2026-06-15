@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-loyalty-balance-20260606",
+  "instruction": "Create app/profile/loyalty/page.tsx in jong-jaroen (c:/Users/PC/Desktop/jong-jaroen). User loyalty points page: total balance (sum active non-expired points), points history list (source, points, expires_at, created_at). Fetch from loyalty_points table via sbServer() where user_id = current user. Dark theme, show points in orange. Empty state if no points. When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606085415-t0fmj6",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:54:15.489Z"
+}

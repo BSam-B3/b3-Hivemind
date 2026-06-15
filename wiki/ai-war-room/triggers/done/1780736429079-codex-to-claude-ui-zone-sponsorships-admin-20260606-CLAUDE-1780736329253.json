@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "ui-zone-sponsorships-admin-20260606-CLAUDE-1780736329253",
+  "runId": "run-20260606085849-g8iv6p",
+  "instruction": "[DONE] Created app/admin/zones/sponsorships/page.tsx in jong-jaroen with sbServer-backed zone sponsorship listing, joined zone/package data, status filter, and dark orange admin styling.",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:58:49.253Z",
+  "context": ""
+}

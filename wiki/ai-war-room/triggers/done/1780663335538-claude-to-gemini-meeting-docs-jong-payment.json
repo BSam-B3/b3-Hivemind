@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "meeting-docs-jong-payment",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/phase-2-meeting-brief.md and wiki/jong-jaroen/payment-ops-pending-approvals.md. Draft 3 short meeting briefs in Thai (1 page each): (1) สำหรับทนาย — ถามเรื่อง central collection legal classification + TOS wording; (2) สำหรับธนาคาร — ถามเรื่อง business account สำหรับ marketplace payout; (3) สำหรับนักบัญชี — ถามเรื่อง principal vs agent, WHT workflow. Write output to wiki/to-b3/GEMINI-RETURN-meeting-docs-jong-payment.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605124112-8dofap",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T12:41:12.929Z"
+}

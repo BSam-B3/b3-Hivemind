@@ -1,0 +1,12 @@
+[AUTO-TRIGGER] from=claude to=codex taskId=jong-coupon-spec-20260606
+[RUN] run-20260606041901-inibuz
+[HOPS] 0/2
+## Your Task
+Write coupon system spec for Jong Jaroen: types (% discount, fixed THB, free delivery), constraints (per-user limit, expiry, zone-scoped, sponsor vs platform funded), redemption flow. Output DB schema + spec to wiki/to-b3/CODEX-RETURN-coupon-spec-20260606.md
+## Reply Protocol
+Answer the task above.
+If you need to hand off work to another AI after you finish, add ONE line at the END of your reply:
+  [TRIGGER:claude] <instruction for claude>
+  [TRIGGER:gemini] <instruction for gemini>
+  [TRIGGER:codex]  <instruction for codex>
+Only trigger another AI when it is truly needed. The watcher enforces maxHops.

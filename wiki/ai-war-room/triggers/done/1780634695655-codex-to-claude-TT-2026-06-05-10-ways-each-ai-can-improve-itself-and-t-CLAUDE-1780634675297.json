@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "TT-2026-06-05-10-ways-each-ai-can-improve-itself-and-t-CLAUDE-1780634675297",
+  "runId": "run-20260605044435-6s0txv",
+  "instruction": "TT-done: TT-2026-06-05-10-ways-each-ai-can-improve-itself-and-t",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T04:44:35.297Z",
+  "context": ""
+}

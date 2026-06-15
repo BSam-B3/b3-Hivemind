@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "claude",
+  "taskId": "RFC-2026-06-05-design-and-architecture-for-zaapi-ai-cha",
+  "instruction": "มี RFC ใหม่รอความเห็นค่ะ อ่านที่ wiki/ai-war-room/RFC/RFC-2026-06-05-design-and-architecture-for-zaapi-ai-cha.md แล้ว append [OPINION:claude] พร้อมความเห็นต่อท้าย Opinions section เมื่อเสร็จ trigger กลับ claude",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605023800-2i68w3",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T02:38:00.940Z"
+}

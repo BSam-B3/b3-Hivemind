@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "gemini",
+  "taskId": "2026-06-05-incident-relay-system-review-gemini",
+  "instruction": "Do not read outside B3-Second-Brain. Review the new AI-to-AI incident relay system. Read wiki/ai-war-room/sessions/2026-06-05-incident-relay-system-review/incident-relay-review-request.md and all listed files. Return the required markdown review. Your answer must end with FINAL: or [TRIGGER:*].",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604181047-gb6jpq",
+  "hopCount": 0,
+  "maxHops": 3,
+  "createdAt": "2026-06-04T18:10:47.551Z"
+}

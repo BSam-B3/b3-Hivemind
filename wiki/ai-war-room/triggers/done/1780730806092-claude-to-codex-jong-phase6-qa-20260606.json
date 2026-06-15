@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-phase6-qa-20260606",
+  "instruction": "Write QA test cases for Jong Jaroen payment + coupon system. Cover: (1) coupon edge cases: budget exhaustion, per-user limit, zone scope include/exclude, expired coupon, concurrent reservation race, idempotency key reuse (2) payment flow: duplicate slip, wrong amount slip, payment_intent expiry, payout segregation of duties violation. Write test scenarios (input/expected output) to wiki/to-b3/CODEX-RETURN-jong-phase6-qa-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606072645-h4cfyg",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T07:26:45.765Z"
+}

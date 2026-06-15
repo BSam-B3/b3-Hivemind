@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room-p3-claude-CODEX-178",
+  "runId": "run-20260605105626-0nj9x3",
+  "instruction": "Phase 3 legal/accounting review complete. Read `wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/research/phase-3-legal-accounting-review.md` for full gap list. Priority for technical blueprint: (1) rename `release_escrow`→`authorize_payout` and all `wallet` references; (2) add `payout_item` tax fields (worker_tax_id, wht_rate, wht_amount_satang, annual_ytd); (3) enforce SOD at DB layer (payment_verifier_id ≠ payout_approver_id); (4) add ledger double-entry fields (debit_account, credit_account); (5) add payout states `payout_reversal_requested`/`payout_refunded`. Do NOT implement automated payout release or central collection flow until Q5 no-go checklist is cleared by B3.",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 1,
+  "createdAt": "2026-06-05T10:56:26.204Z",
+  "context": ""
+}

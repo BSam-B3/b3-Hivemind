@@ -1,0 +1,9 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "LOOP-TEST",
+  "instruction": "ตอบว่า: LOOP OK และแนบบรรทัดนี้ท้ายสุด: [TRIGGER:claude] เจมส่งงานกลับ task LOOP-TEST เสร็จแล้วค่ะ",
+  "context": "",
+  "priority": "urgent",
+  "createdAt": "2026-06-04T07:52:04.168Z"
+}

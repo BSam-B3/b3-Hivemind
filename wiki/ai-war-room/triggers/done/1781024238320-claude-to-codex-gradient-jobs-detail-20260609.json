@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "gradient-jobs-detail-20260609",
+  "instruction": "Apply full-bleed gradient header to app/jobs/page.tsx in C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen. Pattern: bg-[linear-gradient(145deg,#D93414_0%,#EE4D2D_48%,#FF7337_82%,#FFB22B_100%)] rounded-b-[2.5rem] px-5 pt-10 pb-10, dot overlay, top shine, back button '← กลับ', section label text-orange-200, title based on job.title. Keep ALL logic unchanged. Fix import if needed. npx tsc --noEmit.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260609164631-emigjv",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T16:46:31.011Z"
+}

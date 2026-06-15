@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "openclaw-fixes-20260605",
+  "instruction": "แก้ไข 3 จุดใน C:\\Users\\PC\\Desktop\\B3-Second-Brain\\scripts\\openclaw-trigger-watcher.js\n\n## Fix 1: classifyFailure false positive\nปัญหา: Codex stderr มี 'tokens used: 6,225' ทำให้ match token_or_context_limit ผิด\nแก้ที่ function classifyFailure บรรทัดนี้:\n  if (text.match(/token|context|maximum context|context length|too many tokens/)) return 'token_or_context_limit';\nเปลี่ยนเป็น pattern ที่ต้องการ limit/exceeded/maximum/too many/length จริงๆ:\n  if (text.match(/token.*(limit|exceeded|maximum|too many|length)|context.*(length|limit|maximum)/)) return 'token_or_context_limit';\n\n## Fix 2: Claude timeout\nปัญหา: Claude ได้ 120000ms เท่า Gemini — งาน code จริงอาจ timeout\nแก้ที่ function runCliAI:\n  const timeout = aiName === 'codex' ? 600000 : 120000;\nเปลี่ยนเป็น:\n  const timeout = aiName === 'codex' ? 600000 : aiName === 'claude' ? 300000 : 120000;\n\n## Fix 3: stale INBOX cleanup ใน session-start-check.js\nไฟล์: C:\\Users\\PC\\Desktop\\B3-Second-Brain\\scripts\\session-start-check.js\nเพิ่ม Check 7 ต่อท้าย Check 6 (ก่อน // Output section):\nตรวจ INBOX-CLAUDE-*.md ที่เกิน 24 ชม. → แสดงเป็น info (ไม่ใช่ alert) ว่ามีกี่ไฟล์ stale และบอก path ให้ลบเอง\nรูปแบบ: info.push('🗑 Stale INBOX: N ไฟล์เกิน 24h → ลบด้วย npm run war:doctor')\n\nเมื่อแก้ไขทั้ง 3 จุดเสร็จแล้ว ให้ trigger กลับมาหา Claude ด้วย:\n[TRIGGER:claude] openclaw-fixes-20260605 เสร็จแล้ว — อ่านผลที่ wiki/ai-war-room/sessions/openclaw-fixes-20260605/gemini-output.md แล้ว verify syntax + restart watcher",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604183602-5pvgme",
+  "hopCount": 0,
+  "maxHops": 3,
+  "createdAt": "2026-06-04T18:36:02.831Z"
+}

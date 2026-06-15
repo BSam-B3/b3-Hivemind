@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "2026-06-05-marketplace-p0-fix-sprint-review",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-marketplace-p0-fix-sprint/brief.md and task-map.md. After Codex patch is available, review C:/Users/PC/Desktop/jong-jaroen/app/marketplace/shops/page.tsx for P0 fixes: no fabricated promo claims, category filters work or are removed, product/shop fallback does not render wrong schema. Write pass/fail review to wiki/ai-war-room/sessions/2026-06-05-marketplace-p0-fix-sprint/claude-review.md.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604173250-xm65lf",
+  "hopCount": 0,
+  "maxHops": 1,
+  "createdAt": "2026-06-04T17:32:50.531Z"
+}

@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "LOCAL-AI-ROUTING-L2",
+  "instruction": "Create scripts/local-agent-loop.js implementing Level 2 Prompt Agent Pattern: Local Classifies and drafts simple tasks, then hands off to Claude for refinement if complex.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260610084748-6vdqdx",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T08:47:48.206Z"
+}

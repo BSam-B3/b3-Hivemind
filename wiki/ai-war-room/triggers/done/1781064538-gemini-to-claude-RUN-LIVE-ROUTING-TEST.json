@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "RUN-LIVE-ROUTING-TEST",
+  "instruction": "1. ตรวจสอบและ start Docker Desktop ด้วยตัวเองหากยังไม่ติด 2. รันคำสั่งทดสอบ dynamic routing ของ trigger-ai.js ทั้ง Cloud และ Local 3. เขียน doc / upskill อัปเดตทีมและส่งรายงานผลให้คุณบีสาม",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260610032216-m9y9jz",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T03:22:16.776Z"
+}

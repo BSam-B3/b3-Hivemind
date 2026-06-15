@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-phase5-db-migration",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/openclaw-dispatch/CODEX-PHASE5-TASK1-DB-MIGRATION.md and write the SQL migration file only.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605111604-9f2zwu",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T11:16:04.233Z"
+}

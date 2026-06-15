@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-create-intent-api-20260606",
+  "instruction": "Create file app/api/payment-ops/create-intent/route.ts in jong-jaroen project. POST endpoint: receives job_id + payment_method, creates payment_intent row via supabase admin, returns intent id + QR/account details. Use schema from wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/phase-3-technical-blueprint.md Section 1 (payment_intents table). Write result to wiki/to-b3/CODEX-RETURN-create-intent-api-20260606.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260606042737-mexcgh",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:27:37.247Z"
+}

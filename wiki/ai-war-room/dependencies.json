@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "projects": [
+    {
+      "id": "second-brain",
+      "depends_on": [],
+      "notes": "War Room, knowledge base, team coordination."
+    },
+    {
+      "id": "b3-team-avenger",
+      "depends_on": [
+        "second-brain"
+      ],
+      "notes": "Product app tasks use War Room for coordination."
+    },
+    {
+      "id": "jong-jaroen",
+      "depends_on": [
+        "second-brain"
+      ],
+      "notes": "Community service app and business workflows."
+    },
+    {
+      "id": "cit-service",
+      "depends_on": [
+        "second-brain"
+      ],
+      "notes": "CIT operational knowledge and support tooling."
+    }
+  ],
+  "updated_at": "2026-06-03T16:31:23.147Z"
+}

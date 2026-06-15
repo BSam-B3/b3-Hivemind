@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "TEST-V4-GEMINI",
+  "instruction": "ตอบสั้นๆ: ระบบ OpenClaw v4 ทำงานอะไรบ้าง (3 bullet max)",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604104204-igvw8s",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T10:42:04.521Z"
+}

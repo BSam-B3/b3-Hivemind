@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "gemini",
+  "taskId": "2026-06-05-marketplace-shops-ux-score-v3",
+  "instruction": "# Score-Only UX Evaluation Prompt\n\nDo not browse. Do not try to open the URL. Use only the page context below.\n\nYou must return a scorecard with numeric scores. If direct visual inspection is not possible, set confidence to medium or low, but still score from the provided context.\n\nPage: Jong Jaroen `/marketplace/shops`\n\nContext:\n\n- Full-width orange/red marketplace hero with rounded bottom corners.\n- Centered title and search in the hero.\n- Top category area was reduced so search is the main top action.\n- Premium/community highlight carousel below the hero.\n- Products",
+  "context": "Return scorecard only. Target file: wiki/ai-war-room/sessions/2026-06-05-multi-model-ux-evaluation/gemini-scorecard.md",
+  "priority": "normal",
+  "runId": "run-20260604171339-qst83l",
+  "hopCount": 0,
+  "maxHops": 0,
+  "createdAt": "2026-06-04T17:13:39.643Z"
+}

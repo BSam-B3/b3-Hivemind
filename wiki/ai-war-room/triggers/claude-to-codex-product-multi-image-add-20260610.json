@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "product-multi-image-add-20260610",
+  "instruction": "แก้ไฟล์ C:\\Users\\CIT-COMPUTER-001\\Desktop\\jong-jaroen\\app\\marketplace\\manage-shop\\products\\add\\page.tsx\n\nDB มี: images text[], image_url text, promo_video_url text (มี promo_video_url อยู่แล้ว)\n\n1. เปลี่ยน image_url field เดียว → multi-image URL inputs สูงสุด 5 รูป\n   - input + thumbnail 48x48 preview แต่ละ URL\n   - ปุ่ม + เพิ่ม (disabled ถ้าครบ 5), ปุ่ม × ลบ\n   - รูปแรก = image_url\n2. save: เพิ่ม images: imageList ใน insert payload (image_url=imageList[0]||null)\n3. style: rounded-2xl border-gray-200 focus:border-[#EE4D2D] เหมือนไฟล์เดิม",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260610160524-04z3ze",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T16:05:24.263Z"
+}

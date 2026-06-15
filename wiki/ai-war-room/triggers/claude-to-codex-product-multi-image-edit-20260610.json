@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "product-multi-image-edit-20260610",
+  "instruction": "แก้ไฟล์ C:\\Users\\CIT-COMPUTER-001\\Desktop\\jong-jaroen\\app\\marketplace\\manage-shop\\products\\[id]\\edit\\page.tsx\n\nDB มี: images text[], image_url text, promo_video_url text\n\n1. เปลี่ยน 'ลิงก์รูปภาพ' field เดียว → multi-image URL inputs สูงสุด 5 รูป\n   - input + thumbnail 48x48 preview แต่ละ URL\n   - ปุ่ม + เพิ่ม (disabled ถ้าครบ 5), ปุ่ม × ลบ\n   - รูปแรก = image_url (backward compat)\n2. เพิ่ม promo_video_url field (label: ลิงก์วิดีโอสินค้า ไม่บังคับ)\n3. save: images[], image_url=images[0]||null, promo_video_url\n4. load: อ่าน images[] ถ้าว่าง fallback image_url\n5. style: rounded-2xl border-gray-200 focus:border-[#EE4D2D] เหมือนเดิม",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260610160520-49wy53",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T16:05:20.233Z"
+}

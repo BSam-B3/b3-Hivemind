@@ -1,0 +1,12 @@
+[AUTO-TRIGGER] from=gemini to=claude taskId=openclaw-fixes-20260605
+[RUN] run-20260604184255-k32ys0
+[HOPS] 0/2
+## Your Task
+openclaw-fixes-20260605 เสร็จแล้ว — อ่านผลที่ wiki/ai-war-room/sessions/openclaw-fixes-20260605/gemini-output.md แล้ว verify syntax + restart watcher
+## Reply Protocol
+Answer the task above.
+If you need to hand off work to another AI after you finish, add ONE line at the END of your reply:
+  [TRIGGER:claude] <instruction for claude>
+  [TRIGGER:gemini] <instruction for gemini>
+  [TRIGGER:codex]  <instruction for codex>
+Only trigger another AI when it is truly needed. The watcher enforces maxHops.

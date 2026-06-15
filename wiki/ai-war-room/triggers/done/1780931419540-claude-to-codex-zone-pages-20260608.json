@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "zone-pages-20260608",
+  "instruction": "Create jong-jaroen/app/(main)/zones/page.tsx — Zone listing page. Show all zones from 'zones' table (id, name, description, sponsor_name, sponsor_logo_url, is_active). Mobile-first, orange gradient header. Each zone as a card with sponsor logo + name + description. Link to /zones/[id]. Use Supabase client from @/lib/supabase/client.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260608151019-hi0s4o",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-08T15:10:19.220Z"
+}

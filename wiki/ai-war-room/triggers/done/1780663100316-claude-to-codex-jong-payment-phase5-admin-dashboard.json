@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-phase5-admin-dashboard",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/openclaw-dispatch/CODEX-PHASE5-TASK4-ADMIN-DASHBOARD.md and write the 2 admin dashboard page files only.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605123819-7seayp",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T12:38:19.973Z"
+}

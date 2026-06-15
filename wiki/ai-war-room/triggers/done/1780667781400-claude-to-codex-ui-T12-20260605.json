@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-T12-20260605",
+  "instruction": "Read wiki/ai-war-room/sessions/jong-payment-phase6-ui/codex-T12-spec.md then implement the 2 files at the ABSOLUTE paths specified. Use sbAdmin from @/lib/supabase/admin and sbServer from @/lib/supabase/server exactly as used in jong-jaroen/app/admin/finance/payment-ops/page.tsx. Write to C:\\Users\\PC\\Desktop\\jong-jaroen\\ paths directly.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605135621-q9kapt",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T13:56:21.061Z"
+}

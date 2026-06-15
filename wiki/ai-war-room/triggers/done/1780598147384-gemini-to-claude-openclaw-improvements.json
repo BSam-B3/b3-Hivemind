@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "openclaw-improvements",
+  "instruction": "ปรับปรุงระบบ OpenClaw ตามข้อเสนอแนะ: 1) แก้ปัญหา Encoding ภาษาไทยใน scripts/openclaw-trigger-watcher.js และสคริปต์ที่เกี่ยวข้องให้เป็น UTF-8 2) ทำระบบแจ้งเตือนหรือ auto-start watcher 3) ปรับปรุงคิวแสดงผลให้ดูง่ายขึ้น เมื่อเสร็จแล้วให้ทริกเกอร์แจ้ง gemini กลับด้วยค่ะ",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604183547-zjt528",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T18:35:47.062Z"
+}

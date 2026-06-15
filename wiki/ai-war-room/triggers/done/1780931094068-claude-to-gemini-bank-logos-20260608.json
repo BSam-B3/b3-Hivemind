@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "bank-logos-20260608",
+  "instruction": "Browse Thai bank official websites and find logo image URLs (PNG/SVG, square/icon format, no background preferred). Banks: กสิกรไทย(KBANK), ไทยพาณิชย์(SCB), กรุงเทพ(BBL), กรุงไทย(KTB), ทหารไทยธนชาต(TTB), กรุงศรีอยุธยา(BAY), ออมสิน(GSB), อาคารสงเคราะห์(GHB), ธ.ก.ส.(BAAC), ยูโอบี(UOB), ซีไอเอ็มบี(CIMB), ทิสโก้(TISCO), เกียรตินาคิน(KKP), แลนด์แอนด์เฮาส์(LHB). Return result as JSON array: [{id,name,short,logo_url,bg_color}]. Write result to wiki/to-b3/GEMINI-RETURN-bank-logos-20260608.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260608150451-inxl8x",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-08T15:04:51.398Z"
+}

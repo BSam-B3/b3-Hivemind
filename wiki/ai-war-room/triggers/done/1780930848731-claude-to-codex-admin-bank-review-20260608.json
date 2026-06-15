@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "admin-bank-review-20260608",
+  "instruction": "Create jong-jaroen/app/admin/bank-review/page.tsx — Admin reviews bank submissions. Query profiles where bank_status='pending', show: avatar, name, bank_name, masked account_number, bank_book_url photo. Approve sets bank_status='approved', reject sets bank_status='rejected' + bank_status_note. Use same orange gradient header style as app/admin/kyc/KycListClient.tsx.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260608150048-7x0ovv",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-08T15:00:48.410Z"
+}

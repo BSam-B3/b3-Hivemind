@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "avenger-pdf-quotation-20260606",
+  "instruction": "In b3-team-avenger project: update app/api/quotation/approve/route.ts to generate a real PDF using pdf-lib. PDF must include: company header, quotation number, customer name, line items table (name/qty/unit_price/total), grand total, approval signature line. Save PDF to Supabase Storage bucket quotation-pdfs and return public URL. Write result to wiki/to-b3/CODEX-RETURN-avenger-pdf-quotation-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606043440-22ppha",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:34:40.018Z"
+}

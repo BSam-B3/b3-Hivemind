@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "RFC-2026-06-05-team-system-upgrade-review",
+  "instruction": "อ่าน RFC ที่ wiki/ai-war-room/RFC/RFC-2026-06-05-team-system-upgrade-review.md แล้วตอบ 3 คำถาม: 1) ระบบนี้ควรทำไหม มีอะไร overcomplicate? 2) อะไรที่พลาด? 3) Priority ถัดไปคืออะไร? เขียนความเห็นสั้นๆ ชัดเจน แล้วจบด้วย [TRIGGER:claude] RFC-2026-06-05-team-system-upgrade-review opinion-done",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605032259-2moel1",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T03:22:59.527Z"
+}

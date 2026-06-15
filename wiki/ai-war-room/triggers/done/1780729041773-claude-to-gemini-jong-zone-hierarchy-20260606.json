@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "jong-zone-hierarchy-20260606",
+  "instruction": "Design zone hierarchy for Jong Jaroen: 5 pilot zones (Pak Nam Krasae, Khlong Pun, Thung Khwai Kin, Phang Rat, Kram). Propose zone tier structure (Province > District > Community Zone) and zone_types enum. Write DB schema draft and zone hierarchy to wiki/to-b3/GEMINI-RETURN-zone-hierarchy-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606041900-8ceyxp",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:19:00.665Z"
+}

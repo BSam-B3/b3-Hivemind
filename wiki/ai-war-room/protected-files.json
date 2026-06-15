@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "pattern": ".env*",
+      "reason": "environment secrets and runtime config"
+    },
+    {
+      "pattern": "**/.env*",
+      "reason": "environment secrets and runtime config"
+    },
+    {
+      "pattern": "wiki/credentials/**",
+      "reason": "credentials vault"
+    },
+    {
+      "pattern": "wiki/api-keys.txt",
+      "reason": "API key inventory"
+    },
+    {
+      "pattern": "**/*credentials*.md",
+      "reason": "credential documentation"
+    },
+    {
+      "pattern": "**/*secret*.md",
+      "reason": "secret documentation"
+    },
+    {
+      "pattern": "**/*migration*.sql",
+      "reason": "database migration"
+    },
+    {
+      "pattern": "**/schema*.sql",
+      "reason": "database schema"
+    },
+    {
+      "pattern": "**/supabase/**",
+      "reason": "Supabase project config"
+    }
+  ],
+  "updated_at": "2026-06-03T16:13:50.300Z"
+}

@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "TT-2026-06-05-think-tank-system-will-it-work-bugs-to-f-CLAUDE-1780633056310",
+  "runId": "run-20260605041736-29cpkn",
+  "instruction": "TT-done: TT-2026-06-05-think-tank-system-will-it-work-bugs-to-f",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T04:17:36.310Z",
+  "context": ""
+}

@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-dashboard-verify-20260606",
+  "instruction": "In jong-jaroen project: run npx tsc --noEmit and report any errors in app/admin/finance/payment-ops/page.tsx and app/admin/finance/payout-queue/page.tsx. Write result to wiki/to-b3/CODEX-RETURN-payment-dashboard-tsc-20260606.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260606041818-iiuv5v",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:18:18.918Z"
+}

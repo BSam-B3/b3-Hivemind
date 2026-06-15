@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-10 21:08:04 ICT",
+  "active_tasks": [],
+  "open_inbox": [
+    "claude-local-ai-routing-l2",
+    "claude-local-ai-routing-l3",
+    "claude",
+    "gemini"
+  ],
+  "recent_lessons": [
+    "## 2026-06-09T03:49:41.320Z",
+    "Lesson: Bypass auth check & layout wrapper in StaffLayout for /staff and /staff/auth-callback paths to fix infinite redirect loop",
+    "## 2026-06-09T03:52:00.826Z",
+    "Lesson: Switch client supabase instances to createBrowserClient from @supabase/ssr to fix session cookies syncing with middleware",
+    "## 2026-06-09T18:16:57.894Z",
+    "Lesson: Successfully set up One API Docker container with local SQLite config, integrated Ollama models qwen2.5-coder:1.5b and gemma2:2b, and updated ask-gemini.js wrapper for local API fallback execution with bilingual output capability",
+    "## 2026-06-09T18:33:38.463Z",
+    "Lesson: Successfully implemented B3 Master Code Templates for Local AI, created scripts/local-standup.js for offline daily reports via Gemma 2 (2b), and registered package.json CLI runner",
+    "## 2026-06-09T18:40:42.027Z",
+    "Lesson: Successfully implemented Local Codebase Oracle, Offline Self-Healing Compiler, and Privacy Guard PII Redactor scripts, registered in package.json, and verified local gemma2 API calls"
+  ],
+  "hot_files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "CODEX.md",
+    "GEMINI.md",
+    "HEARTBEAT.md",
+    "IDENTITY.md",
+    "SOUL.md",
+    "TOOLS.md",
+    "USER.md",
+    "package.json",
+    "scripts/ask-ai.js",
+    "scripts/ask-local.js",
+    "scripts/autonomous-loop.js",
+    "scripts/context-snapshot.js",
+    "scripts/local-agent-loop.js"
+  ],
+  "routing_stats": {
+    "local_runs_last50": 45,
+    "local_success_rate": 56
+  },
+  "pending_for_next_session": [],
+  "decisions": [],
+  "notes": {}
+}

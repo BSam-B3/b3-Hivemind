@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "browse-zone-sponsor-pricing-20260606",
+  "instruction": "Research local Thai community app sponsor pricing models comparable to jong-jaroen. Browse: (1) LINE MAN Wongnai merchant pricing page, (2) Robinhood merchant sponsor packages, (3) any Thai local community platform that charges shops for visibility. Goal: validate whether ฿299/฿799/฿1,990 per month is competitive or too high/low for a new community app in rural Rayong province (population ~20k in target zone). Output to wiki/to-b3/GEMINI-RETURN-zone-sponsor-pricing-20260606.md: competitive analysis + recommended price adjustment if any.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606080142-zynp8r",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:01:42.213Z"
+}

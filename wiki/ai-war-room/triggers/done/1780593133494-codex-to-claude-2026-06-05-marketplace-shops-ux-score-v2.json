@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "2026-06-05-marketplace-shops-ux-score-v2",
+  "instruction": "# Shared Prompt v2: Multi-Model UX Evaluation With Page Context\n\nYou are joining the B3 AI War Room as an independent evaluator.\n\nEvaluate this page:\n\n- Product: Jong Jaroen\n- Page: Marketplace shops\n- URL: https://jong-jaroen.vercel.app/marketplace/shops\n- Main source file, if available locally: C:/Users/PC/Desktop/jong-jaroen/app/marketplace/shops/page.tsx\n- Evaluation date: 2026-06-05\n\nIf you cannot open the URL or inspect the app directly, still complete the evaluation using the page context below. State that your confidence is medium or low if direct visual inspection was not possible.\n\n## Page Context\n\nThe page is `/marketplace/shops` in the Jong Jaroen app. It is a community marketplace page with:\n\n- A global top navigation bar shared with other pages.\n- A full-width orange/red gradient hero header with rounded bottom corners.\n- Centered page title and search area in the hero.\n- Small statistics showing total shops, promoted shops, and shippable products.\n- A reduced top category area so the hero focuses mainly on search and page identity.\n- A premium/community highlight carousel section below the hero.\n- A products",
+  "context": "Return output to wiki/ai-war-room/sessions/2026-06-05-multi-model-ux-evaluation/claude-scorecard.md",
+  "priority": "normal",
+  "runId": "run-20260604171147-f5zji5",
+  "hopCount": 0,
+  "maxHops": 1,
+  "createdAt": "2026-06-04T17:11:47.044Z"
+}

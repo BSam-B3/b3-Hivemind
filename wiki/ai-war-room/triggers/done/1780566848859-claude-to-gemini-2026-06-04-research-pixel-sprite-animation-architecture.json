@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "2026-06-04-research-pixel-sprite-animation-architecture",
+  "instruction": "Research pixel sprite animation architecture สำหรับ Character Creator — อ่าน GEMINI-INSTRUCTIONS.md แล้ว output ไปที่ sessions/research/synthesis.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604095408-lg3iud",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T09:54:08.538Z"
+}

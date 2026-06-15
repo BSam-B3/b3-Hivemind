@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "gemini",
+  "taskId": "2026-06-05-marketplace-shops-ux-score",
+  "instruction": "# Shared Prompt: Multi-Model UX Evaluation\n\nYou are joining the B3 AI War Room as an independent evaluator.\n\nEvaluate this page:\n\n- Product: Jong Jaroen\n- Page: Marketplace shops\n- URL: https://jong-jaroen.vercel.app/marketplace/shops\n- Main source file, if available locally: C:/Users/PC/Desktop/jong-jaroen/app/marketplace/shops/page.tsx\n- Evaluation date: 2026-06-05\n\nUse the same standards for every model response. Do not only praise the design. Score honestly, identify the biggest usability risks, and recommend concrete next steps.\n\n## Personas\n\nSimulate the B3 AI-Team as review lenses:\n\n- Enjoy: senior frontend/UI designer. Judge layout, spacing, polish, responsiveness, and visual hierarchy.\n- Nara: creative director. Judge copy, mood, local brand story, and whether the page feels inviting.\n- Karn: community engagement lead. Judge whether ordinary people in the community can understand and use it quickly.\n- Dana: data/growth analyst. Judge conversion, search/filter discoverability, CTA clarity, and measurable improvements.\n- Mira: market intelligence analyst. Judge whether the page feels competitive against marketplace/community-shop patterns.\n- Qara: QA/UX tester. Judge mobile behavior, edge cases, interaction feedback, and visual regressions.\n- Joe: backend/infrastructure lead. Judge data dependencies, integration readiness, and hidden implementation risk.\n- Kitti: compliance/trust lens. Judge trust language, privacy-sensitive areas, seller/product claims, and legal ambiguity.\n\n## Scoring Rubric\n\nReturn scores from 0 to 10 for each category:\n\n- task_clarity: Can users understand what this page is for within 5 seconds?\n- search_and_findability: Are search, filters, categories, and browsing easy to find and use?\n- visual_hierarchy: Does the page guide attention cleanly without clutter or dead space?\n- mobile_usability: Is it usable on mobile and tablet without awkward scrolling, clipping, or tiny controls?\n- conversion_readiness: Are enter",
+  "context": "Return output to wiki/ai-war-room/sessions/2026-06-05-multi-model-ux-evaluation/gemini-scorecard.md",
+  "priority": "normal",
+  "runId": "run-20260604170926-7ff5uj",
+  "hopCount": 0,
+  "maxHops": 1,
+  "createdAt": "2026-06-04T17:09:26.350Z"
+}

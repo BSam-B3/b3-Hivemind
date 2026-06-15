@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "finalize-self-alignment-20260606-CLAUDE-1780719514615",
+  "runId": "run-20260606041834-hmug1k",
+  "instruction": "Review the `task-map.md` for `finalize-self-alignment-20260606` and assign an owner/coordinator/reviewer.",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:18:34.615Z",
+  "context": ""
+}

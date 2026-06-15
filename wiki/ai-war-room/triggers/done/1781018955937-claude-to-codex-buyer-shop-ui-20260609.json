@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "buyer-shop-ui-20260609",
+  "instruction": "Upgrade buyer-facing shop pages in jong-jaroen project (C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen). 3 atomic tasks: (1) app/marketplace/shops/page.tsx — show 🌟 premium badge on shop cards where is_premium=true. (2) app/marketplace/shops/[id]/page.tsx — apply full-bleed gradient header matching other pages: bg-[linear-gradient(145deg,#D93414_0%,#EE4D2D_48%,#FF7337_82%,#FFB22B_100%)] rounded-b-[2.5rem], remove old card wrapper div. (3) app/marketplace/shops/[id]/page.tsx — show flash sale badge (red 🔥 -X%) on product cards that have active flash_sales (join flash_sales table: shop_id=id, now between starts_at and ends_at, show sale_price instead of base_price). tsc must pass. Use createClient from @/lib/supabase/client not @/lib/supabase.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260609140723-mjw72g",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T14:07:23.887Z"
+}

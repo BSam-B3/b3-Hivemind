@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "mira-wht-platform-research",
+  "instruction": "คุณคือ Mira นักวิเคราะห์ตลาด FinTech ไทย. Research และเปรียบเทียบว่า platform marketplace ไทยเหล่านี้จัดการ WHT (หัก ณ ที่จ่าย) และ payment flow อย่างไร: (1) Fastwork.co — freelance marketplace (2) LINE MAN / GrabFood — delivery platform (3) Robinhood Food Delivery (4) iTALENT หรือ JobThai marketplace ถ้าหาข้อมูลได้. สำหรับแต่ละ platform: ใครหัก WHT, วิธีออกใบรับรอง, TOS บอกว่า principal หรือ agent, payment flow เป็นยังไง. สรุปเป็น comparison table + best practice ที่ Jong Jaroen ควรนำมาใช้. เขียนผลลัพธ์ลงไฟล์ wiki/to-b3/GEMINI-RETURN-mira-wht-research.md",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605125259-19shtj",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T12:52:59.444Z"
+}

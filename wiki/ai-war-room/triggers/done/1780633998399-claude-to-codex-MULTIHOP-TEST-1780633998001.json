@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "MULTIHOP-TEST-1780633998001",
+  "instruction": "Multi-hop test hop 1/3. Reply with: [HOP1:codex] received. Then: [TRIGGER:gemini] Multi-hop test hop 2/3. Reply with [HOP2:gemini] received. Then: [TRIGGER:claude] MULTIHOP-COMPLETE: all 3 hops succeeded",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605043318-m85hlx",
+  "hopCount": 0,
+  "maxHops": 3,
+  "createdAt": "2026-06-05T04:33:18.070Z"
+}

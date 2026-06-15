@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "finalize-self-alignment-20260606",
+  "instruction": "Summarize wiki/ai-war-room/sessions/2026-06-04-gemini-self-alignment-and-process-audit/task-map.md into wiki/to-b3/GEMINI-RETURN-self-alignment-20260606.md (done vs pending items)",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606041816-10l1q5",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:18:16.670Z"
+}

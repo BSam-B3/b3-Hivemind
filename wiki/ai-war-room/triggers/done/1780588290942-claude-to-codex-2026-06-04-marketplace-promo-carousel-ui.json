@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "2026-06-04-marketplace-promo-carousel-ui",
+  "instruction": "ทำ Promo Carousel หน้า /marketplace/shops ใน jong-jaroen project (c:/Users/PC/Desktop/jong-jaroen)",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604155130-nyjbcb",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T15:51:30.630Z"
+}

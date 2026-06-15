@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "cit-staff-login-spec-20260606-CLAUDE-1780721437522",
+  "runId": "run-20260606045037-wk2vjd",
+  "instruction": "Implement the Staff Login flow based on the spec provided, including separate login for staff, role-based access control, and role-based redirects. Start with the backend API endpoints and JWT integration.",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:50:37.523Z",
+  "context": ""
+}

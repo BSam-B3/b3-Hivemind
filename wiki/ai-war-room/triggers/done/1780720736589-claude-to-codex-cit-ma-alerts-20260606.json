@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "cit-ma-alerts-20260606",
+  "instruction": "In cit-service project: create app/api/cron/ma-alerts/route.ts. GET endpoint: query cit_ma_contracts where end_date is within 30 days or 7 days from today, send Telegram notification per contract (use lib/telegram.ts, Chat ID -1003844417005). Format: contract name + customer + days remaining. Write result to wiki/to-b3/CODEX-RETURN-cit-ma-alerts-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606043433-sipras",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:34:33.253Z"
+}

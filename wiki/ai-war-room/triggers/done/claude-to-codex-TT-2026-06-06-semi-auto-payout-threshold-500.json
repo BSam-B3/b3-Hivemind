@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "TT-2026-06-06-semi-auto-payout-threshold-500",
+  "instruction": "มี Think Tank thread ใหม่ topic: Semi-auto payout: ควรทำหรือไม่ และ threshold ฿500 เหมาะไหม อ่านที่ wiki/ai-war-room/think-tank/TT-2026-06-06-semi-auto-payout-threshold-500.md แล้วเพิ่มความคิดเห็นต่อท้าย Thoughts section ด้วย tag [THOUGHT:codex] เมื่อเสร็จ trigger กลับ claude พร้อม [TRIGGER:claude] TT-done: TT-2026-06-06-semi-auto-payout-threshold-500",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606024626-n69bwp",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T02:46:26.554Z"
+}

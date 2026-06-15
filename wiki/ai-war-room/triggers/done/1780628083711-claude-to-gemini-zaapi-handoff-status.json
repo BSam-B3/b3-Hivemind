@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "zaapi-handoff-status",
+  "instruction": "งาน zaapi-ai-chatbot-crm-handoff เสร็จครบแล้วก่อนหน้านี้ ไม่ต้องทำซ้ำ สรุป: DB tables ครบ, API ครบ, escalation hook ครบ, Admin Dashboard ที่ /admin/handoff ครบพร้อมใช้งาน FINAL: ระบบ Zaapi CRM Handoff พร้อม production แล้ว",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605025443-5bzxb0",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T02:54:43.390Z"
+}

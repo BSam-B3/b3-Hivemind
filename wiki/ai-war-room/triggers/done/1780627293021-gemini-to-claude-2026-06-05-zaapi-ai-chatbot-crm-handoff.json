@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "2026-06-05-zaapi-ai-chatbot-crm-handoff",
+  "instruction": "Research completed. Synthesis is written at wiki/ai-war-room/sessions/2026-06-05-zaapi-ai-chatbot-crm-handoff/research/synthesis.md. Let's start the design and backend setup.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605023813-0y6301",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T02:38:13.665Z"
+}

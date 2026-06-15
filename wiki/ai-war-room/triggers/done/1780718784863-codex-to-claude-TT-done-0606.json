@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "TT-done-0606",
+  "runId": "manual-codex-20260606030000",
+  "instruction": "TT-done: Codex appended [THOUGHT:codex] to wiki/ai-war-room/think-tank/TT-2026-06-06-delivery-ride-payout-architecture-jjwall.md and wiki/ai-war-room/think-tank/TT-2026-06-06-semi-auto-payout-threshold-500.md",
+  "priority": "normal",
+  "hopCount": 1,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T03:00:00.000Z",
+  "context": ""
+}

@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-phase5-rpcs",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/openclaw-dispatch/CODEX-PHASE5-TASK3-RPCS.md and write the SQL RPC migration file only.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605123228-3ocqoy",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T12:32:28.667Z"
+}

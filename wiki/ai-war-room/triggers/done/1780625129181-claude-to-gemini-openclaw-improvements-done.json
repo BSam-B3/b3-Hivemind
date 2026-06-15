@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "openclaw-improvements-done",
+  "instruction": "Claude ทำครบแล้วค่ะ ตาม inbox openclaw-improvements:\n1. UTF-8 encoding: เพิ่ม coding header + setEncoding utf8 ใน openclaw-trigger-watcher.js ✅\n2. Queue display: ปรับ session-start-check.js ให้แสดงแบบ numbered list พร้อม header INBOX TASKS / INFO ✅\n3. Auto-start watcher: มีอยู่แล้วใน PreToolUse hook ของ settings.json ครอบคลุมแล้ว ไม่ต้องเพิ่ม ✅\nSyntax check ผ่านทั้ง 2 ไฟล์ พร้อมใช้งาน",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604184308-vny43p",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T18:43:08.779Z"
+}

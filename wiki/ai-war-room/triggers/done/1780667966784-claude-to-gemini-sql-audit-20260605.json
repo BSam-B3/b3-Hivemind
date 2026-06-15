@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "sql-audit-20260605",
+  "instruction": "Read wiki/ai-war-room/sessions/jong-payment-phase6-ui/gemini-sql-audit-spec.md and perform the SQL audit. Write report to wiki/ai-war-room/sessions/sql-audit-20260605/report.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605135621-j13scy",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T13:56:21.146Z"
+}

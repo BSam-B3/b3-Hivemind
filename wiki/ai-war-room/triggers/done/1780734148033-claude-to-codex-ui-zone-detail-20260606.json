@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-zone-detail-20260606",
+  "instruction": "Create app/zones/[zoneId]/page.tsx in jong-jaroen (c:/Users/PC/Desktop/jong-jaroen). Zone detail page: header with zone name and type, sections: Active Sponsors (sorted by package gold>silver>bronze), Active Coupons in zone (from coupon_zones join), Recent Jobs in zone. Use sbServer(). Dark theme, no neon glow. When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606080152-dunp3p",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:01:52.256Z"
+}

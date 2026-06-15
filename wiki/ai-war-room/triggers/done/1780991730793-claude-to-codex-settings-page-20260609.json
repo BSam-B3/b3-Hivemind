@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "settings-page-20260609",
+  "instruction": "Create C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen/app/marketplace/manage-shop/settings/page.tsx — Shop settings page. Full-bleed gradient header (same as garage/page.tsx): section label SHOP SETTINGS, title MY SETTINGS em+span. Form: open_time + close_time inputs, open_days checkboxes Mon-Sun, delivery_mode radio (rider/self/flexible), self_delivery_radius_km number (show if self/flexible), is_temporarily_closed toggle. Save via supabase.from('shops').update(). Use createClient from @/lib/supabase/client. Run npx tsc --noEmit. Reply [TRIGGER:claude] settings-page-20260609 DONE",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260609075530-hoxd76",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T07:55:30.479Z"
+}

@@ -1,0 +1,9 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "DBG-001",
+  "instruction": "say: DEBUG OK",
+  "context": "",
+  "priority": "urgent",
+  "createdAt": "2026-06-04T07:46:29.334Z"
+}

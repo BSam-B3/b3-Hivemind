@@ -1,0 +1,9 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "TEST-002",
+  "instruction": "Reply in one line: TRIGGER OK",
+  "context": "",
+  "priority": "urgent",
+  "createdAt": "2026-06-04T07:13:23.790Z"
+}

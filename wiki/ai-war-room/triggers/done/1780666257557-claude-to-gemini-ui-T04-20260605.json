@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "ui-T04-20260605",
+  "instruction": "Read wiki/ai-war-room/sessions/jong-payment-phase6-ui/gemini-T04-spec.md and implement the 2 files exactly as specified. Write them directly to the jong-jaroen project paths in the spec.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605132901-2pz6jr",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T13:29:01.034Z"
+}

@@ -1,0 +1,67 @@
+{
+  "version": "1.1",
+  "updated_at": "2026-06-03T00:00:00+07:00",
+  "policy": {
+    "role_mode": "dynamic_negotiation",
+    "fixed_roles": false,
+    "selection_basis": [
+      "current context",
+      "available quota",
+      "confidence",
+      "tool access",
+      "lock availability",
+      "task fit"
+    ],
+    "janie_note": "Janie is a prompt/persona/role template, not a persistent running agent."
+  },
+  "agents": {
+    "claude": {
+      "kind": "CLI/model",
+      "capability_profile": [
+        "planning",
+        "frontend",
+        "fullstack",
+        "review",
+        "writing",
+        "reasoning"
+      ],
+      "can_claim_any_task": true
+    },
+    "codex": {
+      "kind": "CLI/model",
+      "capability_profile": [
+        "implementation",
+        "scripts",
+        "debugging",
+        "tests",
+        "refactor",
+        "repo inspection"
+      ],
+      "can_claim_any_task": true
+    },
+    "gemini": {
+      "kind": "CLI/model",
+      "capability_profile": [
+        "analysis",
+        "research",
+        "architecture",
+        "documentation",
+        "review",
+        "implementation"
+      ],
+      "can_claim_any_task": true
+    },
+    "janie": {
+      "kind": "prompt/persona",
+      "capability_profile": [
+        "task splitting",
+        "status summary",
+        "handoff drafting",
+        "coordination"
+      ],
+      "can_claim_any_task": false,
+      "note": "Use only when a running model is explicitly prompted to act as Janie."
+    }
+  }
+}
+

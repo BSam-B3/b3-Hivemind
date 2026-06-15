@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "roots": [
+    {
+      "id": "second-brain",
+      "path": "C:/Users/CIT-COMPUTER-001/Desktop/B3-Second-Brain",
+      "prefix": ""
+    },
+    {
+      "id": "b3-team-avenger",
+      "path": "C:/Users/CIT-COMPUTER-001/Desktop/b3-team-avenger",
+      "prefix": "b3-team-avenger"
+    },
+    {
+      "id": "jong-jaroen",
+      "path": "C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen",
+      "prefix": "jong-jaroen"
+    },
+    {
+      "id": "cit-service",
+      "path": "C:/Users/CIT-COMPUTER-001/Desktop/cit-service",
+      "prefix": "cit-service"
+    }
+  ]
+}

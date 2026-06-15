@@ -1,0 +1,9 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "TEST-004",
+  "instruction": "Reply with exactly this text: TRIGGER OK",
+  "context": "",
+  "priority": "urgent",
+  "createdAt": "2026-06-04T07:14:06.780Z"
+}

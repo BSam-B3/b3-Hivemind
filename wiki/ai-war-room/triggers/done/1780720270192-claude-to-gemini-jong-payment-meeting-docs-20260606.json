@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "jong-payment-meeting-docs-20260606",
+  "instruction": "Write 3 meeting brief documents for Jong Jaroen payment ops launch: (1) lawyer brief on payment flow legality + e-money risk, (2) accountant brief on GP 3% revenue split + WHT obligations, (3) bank account setup checklist for receiving central PromptPay. Save to wiki/to-b3/GEMINI-RETURN-meeting-docs-jong-payment.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606042751-50b5xw",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:27:51.002Z"
+}

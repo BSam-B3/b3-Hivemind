@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "jong-payment-phase3-blueprint",
+  "instruction": "Read wiki/ai-war-room/sessions/2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room/openclaw-dispatch/CODEX-PHASE3-TECHNICAL-BLUEPRINT.md and write Phase 3 technical blueprint only.",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260605110606-fk7r8g",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T11:06:06.883Z"
+}

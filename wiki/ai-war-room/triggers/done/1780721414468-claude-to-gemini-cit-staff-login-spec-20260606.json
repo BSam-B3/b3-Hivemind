@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "cit-staff-login-spec-20260606",
+  "instruction": "Browse https://cit-service.vercel.app and audit the current login/auth flow. Then write a spec for staff login: separate login for cit_staff (IT staff) vs customer users, staff role-based access (admin vs tech vs viewer), redirect after login. Write spec to wiki/to-b3/GEMINI-RETURN-cit-staff-login-spec-20260606.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606043442-t5a5ht",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T04:34:42.727Z"
+}

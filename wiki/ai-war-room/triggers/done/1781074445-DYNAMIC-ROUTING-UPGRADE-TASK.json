@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "DYNAMIC-ROUTING-UPGRADE-TASK",
+  "instruction": "1. ตรวจสอบว่าโมเดล qwen2.5:3b และ qwen2.5-coder:3b ใน Ollama ดาวน์โหลดเสร็จหรือยัง 2. ทดลองรันคำสั่ง npm run local:doctor และ npm run local:bench เพื่อวัดประสิทธิภาพใหม่ 3. อัปเดตเอกสารเรียนรู้ของทีม AI และปิด Task อัปเดตคุณบีสาม",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260610042215-m2id4y",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-10T04:22:15.487Z"
+}

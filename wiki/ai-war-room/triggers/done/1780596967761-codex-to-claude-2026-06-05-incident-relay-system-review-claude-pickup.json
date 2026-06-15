@@ -1,0 +1,12 @@
+{
+  "from": "codex",
+  "to": "claude",
+  "taskId": "2026-06-05-incident-relay-system-review-claude-pickup",
+  "instruction": "P1 workflow stuck: Claude review is pending. Read wiki/ai-war-room/sessions/2026-06-05-incident-relay-system-review/claude-pickup-relay.md and evidence.md. Then review the incident relay system using incident-relay-review-request.md. Write result to wiki/ai-war-room/sessions/2026-06-05-incident-relay-system-review/claude-review.md. End your response with FINAL: or [TRIGGER:codex]/[TRIGGER:gemini].",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604181607-ukcq5e",
+  "hopCount": 0,
+  "maxHops": 3,
+  "createdAt": "2026-06-04T18:16:07.444Z"
+}

@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "ui-zone-listing-20260606",
+  "instruction": "Create app/zones/page.tsx in jong-jaroen (c:/Users/PC/Desktop/jong-jaroen). Zone listing page showing all 5 pilot zones from jj_zones table. Each zone card: zone name, zone_type badge (community/market/orchard/temple/tourism), active Gold sponsor badge if any active zone_sponsorships. Use sbServer() to query. Dark theme, no neon glow. When done trigger back to claude with [DONE] tag.",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260606080152-bxjj0f",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-06T08:01:52.178Z"
+}

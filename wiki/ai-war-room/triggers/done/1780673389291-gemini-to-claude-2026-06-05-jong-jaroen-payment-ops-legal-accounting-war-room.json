@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "2026-06-05-jong-jaroen-payment-ops-legal-accounting-war-room",
+  "instruction": "[DONE] SQL Audit เสร็จแล้วค่ะ ผลลัพธ์อยู่ที่ wiki/jong-jaroen/payment-ops-sql-audit.md และ wiki/to-b3/GEMINI-RETURN-sql-audit-payment-ops.md",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260605152948-rqhqoz",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-05T15:29:48.952Z"
+}

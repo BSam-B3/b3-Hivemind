@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "claude",
+  "taskId": "MULTIHOP-TEST-1780633998001-GEMINI-1780634017043-CLAUDE-1780634029357",
+  "runId": "run-20260605043349-8mdm0a",
+  "instruction": "MULTIHOP-COMPLETE: all 3 hops succeeded",
+  "priority": "normal",
+  "hopCount": 2,
+  "maxHops": 3,
+  "createdAt": "2026-06-05T04:33:49.357Z",
+  "context": ""
+}

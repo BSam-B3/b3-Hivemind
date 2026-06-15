@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "storefront-page-20260609",
+  "instruction": "Create C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen/app/marketplace/manage-shop/storefront/page.tsx — Shop storefront customization page (Hi5 style). Full-bleed gradient header (same as garage/page.tsx): section label STOREFRONT, title MY STORE em+span. Form sections: 1) ชื่อร้าน (name text input), 2) คำอธิบายร้าน (description textarea), 3) โลโก้ร้าน (logo_url text input + preview img), 4) สีธีมร้าน (theme_color input type=color, save as hex to shops.theme_color), 5) Social links: Facebook, LINE, TikTok URL inputs (save to shops.social_links jsonb as {facebook,line,tiktok}). Save all via supabase.from('shops').update(). Use createClient from @/lib/supabase/client. Run npx tsc --noEmit. Reply [TRIGGER:claude] storefront-page-20260609 DONE",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260609094229-41semi",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T09:42:29.841Z"
+}

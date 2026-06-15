@@ -1,0 +1,26 @@
+[2026-06-10T07:07:24.885Z] claude → gemini | vercel-deploy-check-20260610 | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T07:07:27.437Z] gemini → claude | vercel-deploy-check-20260610 | PAID | reason: fallback — gemini failed: nonzero_exit
+[2026-06-10T07:07:51.756Z] gemini → local | CHK-ROUTING-GEMINI-TEST | FREE | reason: small task — free CPU model (0 token cost)
+[2026-06-10T07:08:05.529Z] gemini → local | CHK-ROUTING-GEMINI-TEST-2 | FREE | reason: small task — free CPU model (0 token cost)
+[2026-06-10T07:15:23.500Z] claude → gemini | shop-audit-20260610 | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T07:15:25.584Z] gemini → claude | shop-audit-20260610 | PAID | reason: fallback — gemini failed: nonzero_exit
+[2026-06-10T07:15:31.818Z] claude → local | shop-audit-prompts-20260610 | FREE | reason: small task — free CPU model (0 token cost)
+[2026-06-10T07:20:28.787Z] claude → gemini | shop-audit-20260610b | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T07:20:31.336Z] gemini → claude | shop-audit-20260610b | PAID | reason: fallback — gemini failed: nonzero_exit
+[2026-06-10T07:29:42.595Z] claude → gemini | shop-audit-20260610c | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T07:29:45.154Z] gemini → claude | shop-audit-20260610c | PAID | reason: fallback — gemini failed: nonzero_exit
+[2026-06-10T07:30:18.487Z] claude → gemini | shop-audit-20260610d | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T07:35:18.539Z] gemini → claude | shop-audit-20260610d | PAID | reason: fallback — gemini failed: timeout
+[2026-06-10T07:46:26.284Z] claude → gemini | shop-audit-20260610e | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T07:49:22.686Z] gemini → claude | shop-audit-20260610e | PAID | reason: fallback — gemini failed: quota_or_rate_limit
+[2026-06-10T08:31:36.533Z] gemini → claude | LOCAL-AI-ROUTING-L1 | PAID | reason: backend/API/complex-logic — quality gate
+[2026-06-10T08:31:36.563Z] claude → claude | LOCAL-AI-ROUTING-L1 | PAID | reason: fallback — claude failed: no_output
+[2026-06-10T08:42:11.036Z] gemini → claude | shop-audit-20260610e | PAID | reason: backend/API/complex-logic — quality gate
+[2026-06-10T08:42:11.085Z] claude → claude | shop-audit-20260610e | PAID | reason: fallback — claude failed: no_output
+[2026-06-10T08:47:48.568Z] gemini → claude | LOCAL-AI-ROUTING-L2 | PAID | reason: backend/API/complex-logic — quality gate
+[2026-06-10T08:47:48.620Z] claude → claude | LOCAL-AI-ROUTING-L2 | PAID | reason: fallback — claude failed: no_output
+[2026-06-10T08:47:53.526Z] gemini → claude | LOCAL-AI-ROUTING-L3 | PAID | reason: backend/API/complex-logic — quality gate
+[2026-06-10T08:47:53.576Z] claude → claude | LOCAL-AI-ROUTING-L3 | PAID | reason: fallback — claude failed: no_output
+[2026-06-10T14:28:23.690Z] claude → gemini | jong-jaroen-ui-audit-20260610f | PAID | reason: browse/research/visual-audit — needs web access
+[2026-06-10T14:28:29.921Z] gemini → claude | jong-jaroen-ui-audit-20260610f | PAID | reason: fallback — gemini failed: quota_or_rate_limit
+[2026-06-10T16:05:20.613Z] claude → codex | product-multi-image-edit-20260610 | PAID | reason: UI/frontend/code-generation — file write needed

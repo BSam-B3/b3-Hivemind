@@ -1,0 +1,12 @@
+{
+  "from": "claude",
+  "to": "gemini",
+  "taskId": "LOOP-TEST-GEMINI-20260605",
+  "instruction": "This is a loop test from Claude. Reply with: [DONE] GEMINI ONLINE - loop test received from Claude. Then trigger back: [TRIGGER:claude] GEMINI reply: loop test success",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260604183007-koak27",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T18:30:07.001Z"
+}

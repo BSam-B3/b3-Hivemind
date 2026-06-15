@@ -1,0 +1,13 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "products-add-upgrade-20260609",
+  "instruction": "Rewrite C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen/app/marketplace/manage-shop/products/add/page.tsx — fix import from '@/lib/supabase' to createClient from '@/lib/supabase/client'. Add fields: group_id (select from product_groups table filtered by shop_id), promo_video_url (text input, optional YouTube/TikTok URL), stock_quantity (number, optional). Keep existing name/description/base_price/image_url/is_available fields. Full-bleed gradient header same as garage/page.tsx: section label ADD PRODUCT, title NEW ITEM em+span. Run npx tsc --noEmit. Reply [TRIGGER:claude] products-add-upgrade-20260609 DONE",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260609132335-i4bqu5",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T13:23:35.952Z",
+  "_requeued": true
+}

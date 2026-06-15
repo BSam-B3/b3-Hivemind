@@ -1,0 +1,13 @@
+{
+  "from": "claude",
+  "to": "codex",
+  "taskId": "shop-cards-hub-20260609",
+  "instruction": "Edit C:/Users/CIT-COMPUTER-001/Desktop/jong-jaroen/app/profile/shop-cards/page.tsx — upgrade to merchant hub. Apply full-bleed gradient header (same pattern as app/profile/garage/page.tsx): section label MERCHANT HUB, title MY SHOP em+span, stat = products count. Add menu rows: จัดการร้าน→/marketplace/manage-shop, สินค้า→/marketplace/manage-shop/products, ตั้งค่าร้าน→/marketplace/manage-shop/settings, รายได้→/marketplace/manage-shop/earnings. Keep shop status toggle. Design system: C:/Users/CIT-COMPUTER-001/Desktop/B3-Second-Brain/wiki/jong-jaroen/design-system.md. Run npx tsc --noEmit. Reply [TRIGGER:claude] shop-cards-hub-20260609 DONE",
+  "context": "",
+  "priority": "urgent",
+  "runId": "run-20260609073217-513lom",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-09T07:32:17.445Z",
+  "_requeued": true
+}

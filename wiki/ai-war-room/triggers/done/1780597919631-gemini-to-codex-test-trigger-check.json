@@ -1,0 +1,12 @@
+{
+  "from": "gemini",
+  "to": "codex",
+  "taskId": "test-trigger-check",
+  "instruction": "ทดสอบระบบทริกเกอร์ กรุณาตอบกลับข้อความนี้เพื่อยืนยันว่าได้รับข้อความแล้วค่ะ",
+  "context": "",
+  "priority": "normal",
+  "runId": "run-20260604183043-it63bu",
+  "hopCount": 0,
+  "maxHops": 2,
+  "createdAt": "2026-06-04T18:30:43.314Z"
+}
